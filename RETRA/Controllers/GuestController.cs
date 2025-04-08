@@ -7,6 +7,11 @@ namespace RETRA.Controllers
     [Authorize(Roles = Roles.Guest)]
     public class GuestController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult Dashboard()
         {
             return View();

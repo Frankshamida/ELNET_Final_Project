@@ -1,0 +1,189 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RETRA
+build_property.RootNamespace = RETRA
+build_property.ProjectDir = C:\Users\xx624\Desktop\ELNET_Final_Project\RETRA\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\xx624\Desktop\ELNET_Final_Project\RETRA
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/AllBookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWxsQm9va2luZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/GuestManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR3Vlc3RNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/Housekeeping.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG91c2VrZWVwaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/PaymentProcessing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGF5bWVudFByb2Nlc3NpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/RoomInventory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9vbUludmVudG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/Staff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Admin/SystemSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3lzdGVtU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/Bookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXEJvb2tpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/CheckIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXENoZWNrSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXENoZWNrT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/GuestDirectory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXEd1ZXN0RGlyZWN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/Payments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXFBheW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/RoomStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXFJvb21TdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Frontdesk/ServiceRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRkZXNrXFNlcnZpY2VSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Guest/Billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcQmlsbGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Guest/BookRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcQm9va1Jvb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Guest/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Guest/Facilities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcRmFjaWxpdGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Guest/Feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcRmVlZGJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Guest/MyBookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcTXlCb29raW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Guest/RoomService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcUm9vbVNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Housekeeping/CleaningSchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VrZWVwaW5nXENsZWFuaW5nU2NoZWR1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Housekeeping/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VrZWVwaW5nXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Housekeeping/Inventory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VrZWVwaW5nXEludmVudG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Housekeeping/Maintenance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VrZWVwaW5nXE1haW50ZW5hbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Housekeeping/ReportIssue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VrZWVwaW5nXFJlcG9ydElzc3VlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Housekeeping/RoomStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VrZWVwaW5nXFJvb21TdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xx624/Desktop/ELNET_Final_Project/RETRA/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wb5tmlr6qx
