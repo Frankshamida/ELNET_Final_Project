@@ -1,0 +1,284 @@
+﻿@{
+    ViewData["Title"] = "Rooms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="admin-dashboard">
+    <!-- Header -->
+    <div class="dashboard-header">
+        <div>
+            <h2>
+                <i class="fas fa-bed"></i>  ROOMS INVENTORY
+            </h2>
+            <p>Manage and track all rooms in the property</p>
+        </div>
+        <button class="btn btn-add" id="addRoomBtn">
+            <i class="fas fa-plus"></i> Add New Room
+        </button>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+        <div class="filter-content">
+            <div class="filter-grid">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search rooms...">
+                </div>
+                <select class="filter-select">
+                    <option value="">All Room Types</option>
+                    <option value="standard">Standard</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suite</option>
+                </select>
+                <select class="filter-select">
+                    <option value="">All Statuses</option>
+                    <option value="available">Available</option>
+                    <option value="occupied">Occupied</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+                <button class="btn btn-filter">
+                    <i class="fas fa-filter"></i> Filter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rooms Table -->
+    <div class="table-card">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Room Number</th>
+                    <th>Type</th>
+                    <th>Floor</th>
+                    <th>Status</th>
+                    <th>Rate (per night)</th>
+                    <th>Last Cleaned</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Standard</td>
+                    <td>1</td>
+                    <td><span class="status-badge active-badge"><i class="fas fa-circle"></i> Available</span></td>
+                    <td>$120</td>
+                    <td>Today, 10:30 AM</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-action edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                            <button class="btn-action view-btn" title="Details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Standard</td>
+                    <td>1</td>
+                    <td><span class="status-badge inactive-badge"><i class="fas fa-circle"></i> Occupied</span></td>
+                    <td>$120</td>
+                    <td>Yesterday, 4:15 PM</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-action edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                            <button class="btn-action view-btn" title="Details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>Deluxe</td>
+                    <td>2</td>
+                    <td><span class="status-badge active-badge"><i class="fas fa-circle"></i> Available</span></td>
+                    <td>$180</td>
+                    <td>Today, 9:00 AM</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-action edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                            <button class="btn-action view-btn" title="Details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>202</td>
+                    <td>Deluxe</td>
+                    <td>2</td>
+                    <td><span class="status-badge inactive-badge"><i class="fas fa-circle"></i> Occupied</span></td>
+                    <td>$180</td>
+                    <td>Yesterday, 3:45 PM</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-action edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                            <button class="btn-action view-btn" title="Details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>Suite</td>
+                    <td>3</td>
+                    <td><span class="status-badge inactive-badge"><i class="fas fa-circle"></i> Maintenance</span></td>
+                    <td>$250</td>
+                    <td>Monday, 11:20 AM</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-action edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                            <button class="btn-action view-btn" title="Details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-container">
+        <div class="pagination-info">
+            Showing 1 to 5 of 15 rooms
+        </div>
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Add Room Modal -->
+<div class="modal" id="addRoomModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-plus-circle"></i> Add New Room</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="roomForm">
+                    <div class="form-group">
+                        <label for="roomNumber">Room Number</label>
+                        <input type="text" class="form-control" id="roomNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType">Room Type</label>
+                        <select class="form-control" id="roomType" required>
+                            <option value="">Select Type</option>
+                            <option value="standard">Standard</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="floor">Floor</label>
+                        <input type="number" class="form-control" id="floor" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Nightly Rate ($)</label>
+                        <input type="number" class="form-control" id="rate" min="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select class="form-control" id="status" required>
+                            <option value="available">Available</option>
+                            <option value="occupied">Occupied</option>
+                            <option value="maintenance">Maintenance</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="features">Features</label>
+                        <div class="features-checkboxes">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="wifi">
+                                <label class="form-check-label" for="wifi">WiFi</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="tv">
+                                <label class="form-check-label" for="tv">TV</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ac">
+                                <label class="form-check-label" for="ac">Air Conditioning</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="safe">
+                                <label class="form-check-label" for="safe">Safe</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="saveRoomBtn">Save Room</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Room Details Modal -->
+<div class="modal" id="roomDetailsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> Room Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="room-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Room Number:</span>
+                        <span class="detail-value" id="detail-number">101</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Type:</span>
+                        <span class="detail-value" id="detail-type">Standard</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Floor:</span>
+                        <span class="detail-value" id="detail-floor">1</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Status:</span>
+                        <span class="detail-value" id="detail-status"><span class="status-badge active-badge"><i class="fas fa-circle"></i> Available</span></span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Rate:</span>
+                        <span class="detail-value" id="detail-rate">$120</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Last Cleaned:</span>
+                        <span class="detail-value" id="detail-cleaned">Today, 10:30 AM</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Features:</span>
+                        <span class="detail-value" id="detail-features">WiFi, TV, Air Conditioning</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Notes:</span>
+                        <span class="detail-value" id="detail-notes">No special notes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

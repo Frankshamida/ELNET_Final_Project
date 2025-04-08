@@ -1,0 +1,170 @@
+﻿@model List<User>
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="admin-dashboard">
+    <!-- Header -->
+    <div class="dashboard-header">
+        <div>
+            <h2>
+                <i class="fas fa-tachometer-alt me-2"></i>ADMIN DASHBOARD
+            </h2>
+            <p>Welcome, @User.Identity.Name!</p>
+        </div>
+        <div class="header-actions">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <button class="notification-btn">
+                <i class="fas fa-bell"></i>
+                <span class="badge">3</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="card-icon bg-primary">
+                <i class="fas fa-hotel"></i>
+            </div>
+            <div class="card-content">
+                <h3>Suites Available</h3>
+                <h2 class="suite-count">12</h2>
+                <p class="trend up"><i class="fas fa-arrow-up"></i> 2 more than yesterday</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="card-icon bg-success">
+                <i class="fas fa-bed"></i>
+            </div>
+            <div class="card-content">
+                <h3>Standard Rooms</h3>
+                <h2 class="standard-count">24</h2>
+                <p class="trend down"><i class="fas fa-arrow-down"></i> 1 less than yesterday</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="card-icon bg-warning">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="card-content">
+                <h3>Deluxe Rooms</h3>
+                <h2 class="deluxe-count">18</h2>
+                <p class="trend up"><i class="fas fa-arrow-up"></i> 3 more than yesterday</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="charts-row">
+        <!-- Revenue Chart -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <h3>Total Revenue by Year</h3>
+                <div class="chart-actions">
+                    <button class="active">Yearly</button>
+                    <button>Monthly</button>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Guest Pie Chart -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <h3>Monthly Guests Distribution</h3>
+                <div class="chart-actions">
+                    <button class="active">2023</button>
+                    <button>2024</button>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="guestChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback-section">
+        <div class="section-header">
+            <h3>Recent Feedback</h3>
+            <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <div class="feedback-grid">
+            <div class="feedback-card positive">
+                <div class="feedback-header">
+                    <div class="user-info">
+                        <div class="avatar">JD</div>
+                        <div>
+                            <h4>John Doe</h4>
+                            <p>Suite 302 • 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="feedback-content">
+                    <p>"The suite was absolutely perfect! The view was breathtaking and the service was impeccable. Will definitely come back!"</p>
+                </div>
+            </div>
+
+            <div class="feedback-card neutral">
+                <div class="feedback-header">
+                    <div class="user-info">
+                        <div class="avatar">AS</div>
+                        <div>
+                            <h4>Alice Smith</h4>
+                            <p>Standard 105 • 1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="feedback-content">
+                    <p>"Good value for money. Room was clean but the AC was a bit noisy. Staff were friendly and helpful."</p>
+                </div>
+            </div>
+
+            <div class="feedback-card negative">
+                <div class="feedback-header">
+                    <div class="user-info">
+                        <div class="avatar">RJ</div>
+                        <div>
+                            <h4>Robert Johnson</h4>
+                            <p>Deluxe 208 • 3 days ago</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="feedback-content">
+                    <p>"Expected more from a deluxe room. The bathroom wasn't properly cleaned and the minibar wasn't stocked."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,265 @@
+﻿@{
+    ViewData["Title"] = "Payments";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="admin-dashboard">
+    <!-- Header -->
+    <div class="dashboard-header">
+        <div>
+            <h2>
+                <i class="fas fa-credit-card"></i> PAYMENT PROCESSING
+            </h2>
+            <p>Manage guest payments and generate receipts</p>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="payment-content-container">
+        <!-- Top Row - Two Columns -->
+        <div class="payment-top-row">
+            <!-- Left Column - Payment Form -->
+            <div class="payment-form-container">
+                <div class="form-header">
+                    <h4><i class="fas fa-cash-register"></i> Process Payment</h4>
+                </div>
+
+                <div class="form-body">
+                    <div class="form-group">
+                        <label for="bookingId">Booking Reference</label>
+                        <div class="input-group">
+                            <input type="text" id="bookingId" class="form-control" placeholder="Enter booking ID">
+                            <button class="btn btn-primary" id="findBookingBtn">
+                                <i class="fas fa-search"></i> Find
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="booking-details" id="bookingDetails">
+                        <div class="detail-row">
+                            <span class="detail-label">Guest Name:</span>
+                            <span class="detail-value">Juan Dela Cruz</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Room:</span>
+                            <span class="detail-value">Deluxe #201 (₱4,500/night)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Stay Duration:</span>
+                            <span class="detail-value">2 nights (Jan 15-17, 2023)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Total Amount Due:</span>
+                            <span class="detail-value fw-bold">₱9,000.00</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentAmount">Payment Amount (₱)</label>
+                        <input type="number" id="paymentAmount" class="form-control" value="9000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" class="form-control">
+                            <option value="cash">Cash</option>
+                            <option value="credit_card">Credit Card</option>
+                            <option value="gcash">GCash</option>
+                            <option value="bank_transfer">Bank Transfer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentReference">Reference Number</label>
+                        <input type="text" id="paymentReference" class="form-control" placeholder="For non-cash payments">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentNotes">Notes</label>
+                        <textarea id="paymentNotes" class="form-control" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-primary" id="processPaymentBtn">
+                            <i class="fas fa-check-circle"></i> Process Payment
+                        </button>
+                        <button class="btn btn-outline-secondary" id="printReceiptBtn" disabled>
+                            <i class="fas fa-print"></i> Print Receipt
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Receipt Preview -->
+            <div class="receipt-container">
+                <div class="receipt-header">
+                    <h4><i class="fas fa-receipt"></i> Receipt Preview</h4>
+                </div>
+                <div class="receipt-preview" id="receiptPreview">
+                    <div class="receipt">
+                        <div class="receipt-header">
+                            <img src="~/images/2.png" alt="Retra Hotel Logo" class="hotel-logo">
+                            <h2>OFFICIAL RECEIPT</h2>
+                            <div class="receipt-meta">
+                                <div>Receipt #: <span>RC-2023-00124</span></div>
+                                <div>Date: <span>@DateTime.Now.ToString("MMM dd, yyyy hh:mm tt")</span></div>
+                            </div>
+                        </div>
+
+                        <div class="receipt-body">
+                            <div class="receipt-section">
+                                <h4>Guest Information</h4>
+                                <div class="receipt-row">
+                                    <span>Name:</span>
+                                    <span>Juan Dela Cruz</span>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Booking Reference:</span>
+                                    <span>BK-2023-0157</span>
+                                </div>
+                            </div>
+
+                            <div class="receipt-section">
+                                <h4>Payment Details</h4>
+                                <div class="receipt-row">
+                                    <span>Room Charge (Deluxe #201):</span>
+                                    <span>₱9,000.00</span>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Tax (12% VAT):</span>
+                                    <span>₱1,080.00</span>
+                                </div>
+                                <div class="receipt-row total-row">
+                                    <span>Total Amount:</span>
+                                    <span>₱10,080.00</span>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Payment Method:</span>
+                                    <span>Cash</span>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Amount Received:</span>
+                                    <span>₱10,100.00</span>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Change:</span>
+                                    <span>₱20.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="receipt-footer">
+                            <p>Thank you for staying at Retra Hotel!</p>
+                            <div class="signature-line">
+                                <span>_________________________</span>
+                                <span>Authorized Signature</span>
+                            </div>
+                            <div class="contact-info">
+                                <p>123 Hotel Street, Manila, Philippines</p>
+                                <p>Tel: +63 2 8123 4567 | Email: info@retrahotel.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row - Transaction History -->
+        <div class="transaction-history-container">
+            <div class="history-header">
+                <h4><i class="fas fa-history"></i> Transaction History</h4>
+                <div class="history-search">
+                    <input type="text" id="historySearch" class="form-control" placeholder="Search transactions...">
+                    <button class="btn btn-outline-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Receipt #</th>
+                            <th>Date</th>
+                            <th>Guest</th>
+                            <th>Amount</th>
+                            <th>Method</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RC-2023-00124</td>
+                            <td>Jan 15, 2023</td>
+                            <td>Juan Dela Cruz</td>
+                            <td>₱10,080.00</td>
+                            <td>Cash</td>
+                            <td><span class="status-badge active-badge">Completed</span></td>
+                            <td class="action-buttons">
+                                <button class="btn-action view-btn" title="View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-action edit-btn" title="Reissue">
+                                    <i class="fas fa-redo"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RC-2023-00123</td>
+                            <td>Jan 14, 2023</td>
+                            <td>Maria Santos</td>
+                            <td>₱8,400.00</td>
+                            <td>GCash</td>
+                            <td><span class="status-badge active-badge">Completed</span></td>
+                            <td class="action-buttons">
+                                <button class="btn-action view-btn" title="View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-action edit-btn" title="Reissue">
+                                    <i class="fas fa-redo"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RC-2023-00122</td>
+                            <td>Jan 13, 2023</td>
+                            <td>Robert Lim</td>
+                            <td>₱12,600.00</td>
+                            <td>Credit Card</td>
+                            <td><span class="status-badge inactive-badge">Refunded</span></td>
+                            <td class="action-buttons">
+                                <button class="btn-action view-btn" title="View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-action edit-btn" title="Reissue">
+                                    <i class="fas fa-redo"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination-container">
+                <div class="pagination-info">
+                    Showing <span>1</span> to <span>3</span> of <span>3</span> entries
+                </div>
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
