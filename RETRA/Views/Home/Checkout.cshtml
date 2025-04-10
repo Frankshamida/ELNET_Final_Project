@@ -1,0 +1,389 @@
+﻿@{
+    ViewData["Title"] = "Complete Your Booking";
+}
+
+<div class="checkout-container">
+    <div class="checkout-header">
+        <h1>Complete Your Booking</h1>
+    </div>
+
+    <div class="coupon-banner">
+        <p>Have a coupon? <a href="#" id="show-coupon">Click here to enter your code</a></p>
+        <div class="coupon-input" style="display: none;">
+            <input type="text" placeholder="Enter coupon code">
+            <button class="apply-button">Apply</button>
+        </div>
+    </div>
+
+    <div class="checkout-grid">
+        <div class="billing-details">
+            <h2>BILLING DETAILS</h2>
+
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="firstName">First name *</label>
+                    <input type="text" id="firstName" value="John">
+                </div>
+                <div class="form-group half-width">
+                    <label for="lastName">Last name *</label>
+                    <input type="text" id="lastName" value="Doe">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country / Region *</label>
+                <select id="country">
+                    <option value="Philippines" selected>Philippines</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Street address *</label>
+                <input type="text" id="address" placeholder="House number and street name" value="123 Main St">
+            </div>
+
+            <div class="form-group">
+                <label for="city">Town / City *</label>
+                <input type="text" id="city">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="state">State / County *</label>
+                    <input type="text" id="state" value="Isabela">
+                </div>
+                <div class="form-group half-width">
+                    <label for="postcode">Postcode / ZIP *</label>
+                    <input type="text" id="postcode">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" value="09954215366">
+                </div>
+                <div class="form-group half-width">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" value="example@gmail.com">
+                </div>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="createAccount">
+                <label for="createAccount">Create an account?</label>
+            </div>
+
+            <div class="additional-info">
+                <h2>ADDITIONAL INFORMATION</h2>
+                <div class="form-group">
+                    <label for="notes">Order notes [optional]</label>
+                    <textarea id="notes" placeholder="Notes about your order, e.g. special requests"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>YOUR BOOKING</h2>
+
+            <div class="booking-details">
+                <div class="booking-item">
+                    <div class="item-name">13581, The Bliss Package</div>
+                    <div class="item-dates">11 April 2025 - 12 April 2025</div>
+                </div>
+
+                <div class="price-row">
+                    <span class="price-label">Subtotal</span>
+                    <span class="price-value">₱13,976.00</span>
+                </div>
+
+                <div class="price-row">
+                    <span class="price-label">Tax</span>
+                    <span class="price-value">₱0.00</span>
+                </div>
+
+                <div class="price-row total">
+                    <span class="price-label">Total</span>
+                    <span class="price-value">₱13,976.00</span>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h3>PAYMENT METHOD</h3>
+
+                <div class="payment-option">
+                    <input type="radio" id="paymongo-visa" name="payment" checked>
+                    <label for="paymongo-visa">Credit Card via PayMongo VISA</label>
+                    <p class="payment-desc">Simple and easy payments.</p>
+
+                    <div class="card-details">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number *</label>
+                            <input type="text" id="cardNumber" placeholder="•••• •••• •••• ••••">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="expiry">Expiry Date *</label>
+                                <input type="text" id="expiry" placeholder="MM / YYYY">
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="cvc">Card Code (CVC) *</label>
+                                <input type="text" id="cvc" placeholder="CVC">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="gcash" name="payment">
+                    <label for="gcash">GCash via PayMongo</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="grabpay" name="payment">
+                    <label for="grabpay">GrabPay via PayMongo</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="maya" name="payment">
+                    <label for="maya">Maya via PayMongo</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="bpi" name="payment">
+                    <label for="bpi">BPI DOB via PayMongo Billcase</label>
+                </div>
+            </div>
+
+            <div class="terms-agreement">
+                <input type="checkbox" id="agreeTerms" required>
+                <label for="agreeTerms">I have read and agree to the website terms and conditions *</label>
+            </div>
+
+            <button class="place-order-btn">Place Order</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .checkout-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+    }
+
+    .checkout-header h1 {
+        font-size: 28px;
+        color: #2c3e50;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .coupon-banner {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+        .coupon-banner a {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    .coupon-input {
+        display: flex;
+        margin-top: 10px;
+    }
+
+        .coupon-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+
+    .apply-button {
+        background: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+    }
+
+    .checkout-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 15px;
+    }
+
+    .half-width {
+        flex: 1;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+    }
+
+        .checkbox input {
+            margin-right: 10px;
+        }
+
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    .booking-details {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .booking-item {
+        margin-bottom: 15px;
+    }
+
+    .item-name {
+        font-weight: 500;
+    }
+
+    .item-dates {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .price-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+        .price-row.total {
+            border-top: 1px solid #ddd;
+            margin-top: 10px;
+            padding-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+    .payment-methods {
+        margin-bottom: 25px;
+    }
+
+    .payment-option {
+        margin-bottom: 15px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+        .payment-option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+    .payment-desc {
+        color: #666;
+        font-size: 14px;
+        margin: 5px 0 0 25px;
+    }
+
+    .card-details {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed #ddd;
+    }
+
+    .terms-agreement {
+        margin: 25px 0;
+    }
+
+    .place-order-btn {
+        width: 100%;
+        padding: 15px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        .place-order-btn:hover {
+            background: #218838;
+        }
+
+    /* Responsive adjustments */
+    @@media (max-width: 768px) {
+        .checkout-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<script>
+    document.getElementById('show-coupon').addEventListener('click', function(e) {
+        e.preventDefault();
+        const couponInput = document.querySelector('.coupon-input');
+        couponInput.style.display = couponInput.style.display === 'none' ? 'flex' : 'none';
+    });
+
+    // Show card details only when credit card is selected
+    const paymentOptions = document.querySelectorAll('input[name="payment"]');
+    const cardDetails = document.querySelector('.card-details');
+
+    paymentOptions.forEach(option => {
+        option.addEventListener('change', function() {
+            cardDetails.style.display = this.id === 'paymongo-visa' ? 'block' : 'none';
+        });
+    });
+
+    // Initially hide card details if not selected
+    cardDetails.style.display = document.getElementById('paymongo-visa').checked ? 'block' : 'none';
+</script>

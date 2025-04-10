@@ -1,15 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Hotel Management System</title>
     <link rel="stylesheet" href="~/css/site.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/frontdesk.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @RenderSection("Styles", required: false)
 </head>
+
 <body>
     @if (!User.Identity.IsAuthenticated)
     {
@@ -22,9 +26,8 @@
                             <a asp-controller="Home" asp-action="Index" class="nav-link">
                                 <i class="fas fa-home"></i> <span class="nav-text">Home</span>
                             </a>
-                            <a href="#" class="nav-link"><i class="fas fa-info-circle"></i> <span class="nav-text">About</span></a>
                             <a asp-controller="Home" asp-action="About" class="nav-link">
-                                <i class="fas fa-home"></i> <span class="nav-text">About</span>
+                                <i class="fas fa-info-circle"></i> <span class="nav-text">About</span>
                             </a>
                         </div>
 
@@ -38,8 +41,13 @@
 
                         <!-- Right Navigation Items -->
                         <div class="navbar-right">
-                            <a href="#" class="nav-link"><i class="fas fa-concierge-bell"></i> <span class="nav-text">Services</span></a>
-                            <a asp-controller="Account" asp-action="Login" class="btn-login">
+                            <a asp-controller="Home" asp-action="Services" class="nav-link">
+                                <i class="fas fa-home"></i> <span class="nav-text">Services</span>
+                            </a>
+                            <a asp-controller="Home" asp-action="FAQ" class="nav-link">
+                                <i class="fas fa-home"></i> <span class="nav-text">FAQ</span>
+                            </a>
+                            <a asp-controller="Account" asp-action="Login" class="nav-link">
                                 <i class="fas fa-sign-in-alt"></i> <span class="nav-text">Login</span>
                             </a>
                         </div>
@@ -85,28 +93,35 @@
                     <!-- Rest of your sidebar menu items remain the same -->
                     @if (User.IsInRole(Roles.Admin))
                     {
-                        <li><a asp-controller="Admin" asp-action="Dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                        <li><a asp-controller="Admin" asp-action="Dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        </li>
                         <li><a asp-controller="Admin" asp-action="Staff"><i class="fas fa-user-shield"></i> Staff</a></li>
-                        <li><a asp-controller="Admin" asp-action="GuestManagement"><i class="fas fa-user-tag"></i> Guests</a></li>
+                        <li><a asp-controller="Admin" asp-action="GuestManagement"><i class="fas fa-user-tag"></i> Guests</a>
+                        </li>
 
                         <li><a asp-controller="Admin" asp-action="RoomInventory"><i class="fas fa-bed"></i> Rooms</a></li>
-                        <li><a asp-controller="Admin" asp-action="AllBookings"><i class="fas fa-calendar-check"></i> Bookings</a></li>
-                        <li><a asp-controller="Admin" asp-action="PaymentProcessing"><i class="fas fa-credit-card"></i> Payments</a></li>
-                        <li><a asp-controller="Admin" asp-action="Housekeeping"><i class="fas fa-broom"></i> Housekeeping</a></li>
+                        <li><a asp-controller="Admin" asp-action="AllBookings"><i class="fas fa-calendar-check"></i>
+                                Bookings</a></li>
+                        <li><a asp-controller="Admin" asp-action="PaymentProcessing"><i class="fas fa-credit-card"></i>
+                                Payments</a></li>
+                        <li><a asp-controller="Admin" asp-action="Housekeeping"><i class="fas fa-broom"></i> Housekeeping</a>
+                        </li>
                         <li><a asp-controller="Admin" asp-action="Reports"><i class="fas fa-chart-bar"></i> Reports</a></li>
                         <li><a asp-controller="Admin" asp-action="SystemSettings"><i class="fas fa-cogs"></i> Settings</a></li>
+
                         <li>
-                            <a>
-                                <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
-                                    <button type="submit" class="btn-logout">
-                                        <i class="fas fa-sign-out-alt"></i> Logout
-                                    </button>
-                                </form><a />
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
+                                <button type="submit" class="nav-link">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </button>
+                            </form>
                         </li>
+
                     }
                     @if (User.IsInRole(Roles.FrontDesk))
                     {
-                        <li><a asp-controller="FrontDesk" asp-action="Dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                        <li><a asp-controller="FrontDesk" asp-action="Dashboard"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard</a></li>
 
                         <!-- Guest Operations -->
                         <li class="dropdown">
@@ -114,29 +129,36 @@
                                 <i class="fas fa-users"></i> Guests <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a asp-controller="FrontDesk" asp-action="CheckIn"><i class="fas fa-sign-in-alt"></i> Check-In</a></li>
-                                <li><a asp-controller="FrontDesk" asp-action="CheckOut"><i class="fas fa-sign-out-alt"></i> Check-Out</a></li>
-                                <li><a asp-controller="FrontDesk" asp-action="GuestDirectory"><i class="fas fa-address-book"></i> Directory</a></li>
+                                <li><a asp-controller="FrontDesk" asp-action="CheckIn"><i class="fas fa-sign-in-alt"></i>
+                                        Check-In</a></li>
+                                <li><a asp-controller="FrontDesk" asp-action="CheckOut"><i class="fas fa-sign-out-alt"></i>
+                                        Check-Out</a></li>
+                                <li><a asp-controller="FrontDesk" asp-action="GuestDirectory"><i
+                                            class="fas fa-address-book"></i> Directory</a></li>
                             </ul>
                         </li>
 
                         <!-- Limited Access -->
-                        <li><a asp-controller="FrontDesk" asp-action="Bookings"><i class="fas fa-calendar-plus"></i> New Booking</a></li>
-                        <li><a asp-controller="FrontDesk" asp-action="RoomStatus"><i class="fas fa-bed"></i> Room Status</a></li>
-                        <li><a asp-controller="FrontDesk" asp-action="Payments"><i class="fas fa-cash-register"></i> Process Payment</a></li>
-                        <li><a asp-controller="FrontDesk" asp-action="ServiceRequests"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                        <li><a asp-controller="FrontDesk" asp-action="Bookings"><i class="fas fa-calendar-plus"></i> New
+                                Booking</a></li>
+                        <li><a asp-controller="FrontDesk" asp-action="RoomStatus"><i class="fas fa-bed"></i> Room Status</a>
+                        </li>
+                        <li><a asp-controller="FrontDesk" asp-action="Payments"><i class="fas fa-cash-register"></i> Process
+                                Payment</a></li>
+                        <li><a asp-controller="FrontDesk" asp-action="ServiceRequests"><i class="fas fa-concierge-bell"></i>
+                                Services</a></li>
                         <li>
-                            <a>
-                                <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
-                                    <button type="submit" class="btn-logout">
-                                        <i class="fas fa-sign-out-alt"></i> Logout
-                                    </button>
-                                </form><a />
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
+                                <button type="submit" class="nav-link">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </button>
+                            </form>
                         </li>
                     }
                     @if (User.IsInRole(Roles.Housekeeping))
                     {
-                        <li><a asp-controller="Housekeeping" asp-action="Dashboard"><i class="fas fa-clipboard-check"></i> Task Board</a></li>
+                        <li><a asp-controller="Housekeeping" asp-action="Dashboard"><i class="fas fa-clipboard-check"></i> Task
+                                Board</a></li>
 
                         <!-- Room Operations -->
                         <li class="dropdown">
@@ -144,40 +166,48 @@
                                 <i class="fas fa-broom"></i> Rooms <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a asp-controller="Housekeeping" asp-action="CleaningSchedule"><i class="fas fa-calendar-day"></i> Schedule</a></li>
-                                <li><a asp-controller="Housekeeping" asp-action="Maintenance"><i class="fas fa-tools"></i> Maintenance</a></li>
-                                <li><a asp-controller="Housekeeping" asp-action="Inventory"><i class="fas fa-boxes"></i> Supplies</a></li>
+                                <li><a asp-controller="Housekeeping" asp-action="CleaningSchedule"><i
+                                            class="fas fa-calendar-day"></i> Schedule</a></li>
+                                <li><a asp-controller="Housekeeping" asp-action="Maintenance"><i class="fas fa-tools"></i>
+                                        Maintenance</a></li>
+                                <li><a asp-controller="Housekeeping" asp-action="Inventory"><i class="fas fa-boxes"></i>
+                                        Supplies</a></li>
                             </ul>
                         </li>
 
                         <!-- Limited Access -->
-                        <li><a asp-controller="Housekeeping" asp-action="RoomStatus"><i class="fas fa-door-open"></i> Room Status</a></li>
-                        <li><a asp-controller="Housekeeping" asp-action="ReportIssue"><i class="fas fa-exclamation-triangle"></i> Report Issue</a></li>
+                        <li><a asp-controller="Housekeeping" asp-action="RoomStatus"><i class="fas fa-door-open"></i> Room
+                                Status</a></li>
+                        <li><a asp-controller="Housekeeping" asp-action="ReportIssue"><i
+                                    class="fas fa-exclamation-triangle"></i> Report Issue</a></li>
                         <li>
-                            <a>
-                                <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
-                                    <button type="submit" class="btn-logout">
-                                        <i class="fas fa-sign-out-alt"></i> Logout
-                                    </button>
-                                </form><a />
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
+                                <button type="submit" class="nav-link">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </button>
+                            </form>
                         </li>
                     }
                     @if (User.IsInRole(Roles.Guest))
                     {
                         <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> My Stay</a></li>
-                        <li><a asp-controller="Guest" asp-action="BookRoom"><i class="fas fa-calendar-plus"></i> Book Room</a></li>
-                        <li><a asp-controller="Guest" asp-action="MyBookings"><i class="fas fa-receipt"></i> My Bookings</a></li>
-                        <li><a asp-controller="Guest" asp-action="RoomService"><i class="fas fa-utensils"></i> Room Service</a></li>
-                        <li><a asp-controller="Guest" asp-action="Facilities"><i class="fas fa-swimming-pool"></i> Facilities</a></li>
-                        <li><a asp-controller="Guest" asp-action="Billing"><i class="fas fa-file-invoice-dollar"></i> Billing</a></li>
+                        <li><a asp-controller="Guest" asp-action="BookRoom"><i class="fas fa-calendar-plus"></i> Book Room</a>
+                        </li>
+                        <li><a asp-controller="Guest" asp-action="MyBookings"><i class="fas fa-receipt"></i> My Bookings</a>
+                        </li>
+                        <li><a asp-controller="Guest" asp-action="RoomService"><i class="fas fa-utensils"></i> Room Service</a>
+                        </li>
+                        <li><a asp-controller="Guest" asp-action="Facilities"><i class="fas fa-swimming-pool"></i>
+                                Facilities</a></li>
+                        <li><a asp-controller="Guest" asp-action="Billing"><i class="fas fa-file-invoice-dollar"></i>
+                                Billing</a></li>
                         <li><a asp-controller="Guest" asp-action="Feedback"><i class="fas fa-comment-alt"></i> Feedback</a></li>
                         <li>
-                            <a>
-                                <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
-                                    <button type="submit" class="btn-logout">
-                                        <i class="fas fa-sign-out-alt"></i> Logout
-                                    </button>
-                                </form><a/>
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
+                                <button type="submit" class="nav-link">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </button>
+                            </form>
                         </li>
                     }
                 </ul>
@@ -202,4 +232,5 @@
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>
+
 </html>

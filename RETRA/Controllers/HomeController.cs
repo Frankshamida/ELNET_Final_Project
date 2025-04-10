@@ -15,5 +15,37 @@ namespace RETRA.Controllers
         {
             return View();
         }
+
+        public IActionResult CheckAvailability()
+        {
+            return View();
+        }
+
+        public IActionResult bookingconfirmation()
+        {
+            return View();
+        }
+
+        public IActionResult TermsAndConditions()
+        {
+            return View();
+        }
+
+        public IActionResult Checkout()
+        {
+            return View();
+        }
+
+        public IActionResult Services()
+        {
+            return View();
+        }
+
+        public IActionResult FAQ()
+        {
+            return View();
+        }
+
+
     }
 }

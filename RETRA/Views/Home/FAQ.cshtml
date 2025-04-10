@@ -1,0 +1,247 @@
+@{
+    ViewData["Title"] = "Frequently Asked Questions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="faq-container">
+    <div class="faq-header">
+        <h1><i class="fas fa-question-circle"></i> FREQUENTLY ASKED QUESTIONS</h1>
+        <p>We've answered your most common questions below. For complete details, please review our <a href="#">Terms
+                and Conditions</a>.</p>
+    </div>
+
+    <div class="faq-content">
+        <div class="faq-item">
+            <h3 class="faq-question">Where is the hotel located?</h3>
+            <div class="faq-answer">
+                <p>Our hotel is conveniently located in the heart of Cebu City at:</p>
+                <address>
+                    <strong>Your Hotel Name</strong><br>
+                    123 Seaside Boulevard<br>
+                    Cebu City 6000, Philippines<br>
+                    <i class="fas fa-phone"></i> +63 32 123 4567
+                </address>
+                <div class="map-container">
+                    <!-- Embed Google Map of Cebu City location -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.234365209918!2d123.89084931528793!3d10.315058392650417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDE4JzU0LjIiTiAxMjPCsDUzJzM2LjgiRQ!5e0!3m2!1sen!2sph!4v1620000000000!5m2!1sen!2sph"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What are your hotel amenities?</h3>
+            <div class="faq-answer">
+                <p>We offer:</p>
+                <ul>
+                    <li>24/7 Swimming pool with ocean view</li>
+                    <li>Fully-equipped fitness center</li>
+                    <li>Free high-speed WiFi</li>
+                    <li>Business center</li>
+                    <li>In-house spa and massage services</li>
+                    <li>Tour desk for Cebu City attractions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">How do I get a reservation?</h3>
+            <div class="faq-answer">
+                <p>You can book through:</p>
+                <ol>
+                    <li>Our <a href="#">website booking system</a></li>
+                    <li>Phone: +63 32 123 4567</li>
+                    <li>Email: reservations@yourhotelcebu.com</li>
+                    <li>Major travel platforms (Agoda, Booking.com, etc.)</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What Payment Options do you Offer?</h3>
+            <div class="faq-answer">
+                <p>We accept:</p>
+                <ul>
+                    <li>Cash (PHP, USD)</li>
+                    <li>Credit/Debit Cards (Visa, Mastercard, JCB)</li>
+                    <li>GCash</li>
+                    <li>PayMaya</li>
+                    <li>Bank Transfers (Philippine banks only)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What are the maximum occupancy per room?</h3>
+            <div class="faq-answer">
+                <p>Our room capacities:</p>
+                <ul>
+                    <li>Standard Room: 2 adults + 1 child</li>
+                    <li>Deluxe Room: 3 adults or 2 adults + 2 children</li>
+                    <li>Family Suite: 4 adults or 2 adults + 3 children</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">May I bring food into the Hotel?</h3>
+            <div class="faq-answer">
+                <p>Outside food is allowed in guest rooms but not in common areas. We offer 24-hour room service with
+                    local Cebuano specialties.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Are my non-checked in guests allowed in the pool area?</h3>
+            <div class="faq-answer">
+                <p>For security and guest comfort, only registered hotel guests may use the pool facilities. Day passes
+                    may be purchased at the front desk when available.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Can I have a small party at my room?</h3>
+            <div class="faq-answer">
+                <p>Small gatherings are permitted if kept quiet after 10pm. For parties exceeding 5 guests, please
+                    coordinate with our events team as additional fees may apply.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">May I see your Restaurant Menu?</h3>
+            <div class="faq-answer">
+                <p>Our <a href="#">digital menu</a> features Cebuano favorites including:</p>
+                <ul>
+                    <li>Lechon Belly</li>
+                    <li>Seafood Kinilaw</li>
+                    <li>Pochero</li>
+                    <li>Fresh Mango Desserts</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What does the Restaurant serve?</h3>
+            <div class="faq-answer">
+                <p>Our restaurant offers:</p>
+                <ul>
+                    <li><strong>Breakfast</strong>: 6AM-10AM (Buffet with Cebuano options)</li>
+                    <li><strong>Lunch</strong>: 11AM-2PM (À la carte)</li>
+                    <li><strong>Dinner</strong>: 6PM-10PM (Specialty Cebuano nights on weekends)</li>
+                    <li><strong>24-hour</strong>: Room service available</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .faq-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .faq-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .faq-header h1 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    .faq-header p {
+        color: #7f8c8d;
+        font-size: 16px;
+    }
+
+    .faq-item {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .faq-question {
+        padding: 20px;
+        margin: 0;
+        cursor: pointer;
+        background: #f8f9fa;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    .faq-question:hover {
+        background: #e9ecef;
+    }
+
+    .faq-question::after {
+        content: '+';
+        font-size: 24px;
+        color: #3498db;
+    }
+
+    .faq-item.active .faq-question::after {
+        content: '-';
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 20px 20px;
+        max-height: 1000px;
+    }
+
+    .faq-answer p,
+    .faq-answer ul,
+    .faq-answer ol {
+        margin-bottom: 15px;
+    }
+
+    .faq-answer ul,
+    .faq-answer ol {
+        padding-left: 20px;
+    }
+
+    .faq-answer li {
+        margin-bottom: 8px;
+    }
+
+    address {
+        font-style: normal;
+        margin: 15px 0;
+        line-height: 1.6;
+    }
+
+    .map-container {
+        margin-top: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+</style>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.faq-question').click(function() {
+                // Close all other items
+                $('.faq-item').not($(this).parent()).removeClass('active');
+                // Toggle current item
+                $(this).parent().toggleClass('active');
+            });
+        });
+    </script>
+}

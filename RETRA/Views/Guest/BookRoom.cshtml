@@ -10,8 +10,214 @@
             <h2>
                 <i class="fas fa-calendar-plus"></i> BOOK ROOM
             </h2>
-
         </div>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="booking-form-container">
+        <form id="bookRoomForm" class="booking-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="roomType">Room Type</label>
+                    <select id="roomType" class="form-control" required>
+                        <option value="">Select Room Type</option>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="roomNumber">Room Number</label>
+                    <select id="roomNumber" class="form-control" required>
+                        <option value="">Select Room Number</option>
+                        <!-- Room numbers will be populated dynamically based on room type -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="checkInDate">Check-In Date</label>
+                    <input type="date" id="checkInDate" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkOutDate">Check-Out Date</label>
+                    <input type="date" id="checkOutDate" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guestName">Guest Name</label>
+                    <input type="text" id="guestName" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guestEmail">Guest Email</label>
+                    <input type="email" id="guestEmail" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="specialRequests">Special Requests</label>
+                <textarea id="specialRequests" class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-book"></i> Book Room
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                    <i class="fas fa-undo"></i> Reset
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 
+<style>
+    .booking-form-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    .booking-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .form-group {
+        flex: 1;
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+</style>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Room number population based on room type selection
+            $('#roomType').change(function() {
+                const roomType = $(this).val();
+                const roomNumberSelect = $('#roomNumber');
+
+                roomNumberSelect.empty();
+                roomNumberSelect.append('<option value="">Select Room Number</option>');
+
+                if (roomType) {
+                    // This would typically come from an API call in a real application
+                    const roomNumbers = getRoomNumbersByType(roomType);
+
+                    roomNumbers.forEach(function(room) {
+                        roomNumberSelect.append(`<option value="${room.number}">${room.number} (${room.status})</option>`);
+                    });
+                }
+            });
+
+            // Form submission
+            $('#bookRoomForm').submit(function(e) {
+                e.preventDefault();
+
+                // Validate dates
+                const checkInDate = new Date($('#checkInDate').val());
+                const checkOutDate = new Date($('#checkOutDate').val());
+
+                if (checkInDate >= checkOutDate) {
+                    alert('Check-out date must be after check-in date');
+                    return;
+                }
+
+                // Here you would typically make an AJAX call to your backend
+                alert('Room booking submitted! (This would be an API call in a real application)');
+
+                // Reset form after submission
+                this.reset();
+            });
+
+            // Helper function to simulate getting room numbers from a database
+            function getRoomNumbersByType(roomType) {
+                // In a real app, this would be an API call
+                const rooms = {
+                    'single': [
+                        { number: '101', status: 'Available' },
+                        { number: '102', status: 'Available' },
+                        { number: '103', status: 'Occupied' }
+                    ],
+                    'double': [
+                        { number: '201', status: 'Available' },
+                        { number: '202', status: 'Available' }
+                    ],
+                    'deluxe': [
+                        { number: '301', status: 'Available' },
+                        { number: '302', status: 'Maintenance' }
+                    ],
+                    'suite': [
+                        { number: '401', status: 'Available' }
+                    ]
+                };
+
+                return rooms[roomType] || [];
+            }
+        });
+    </script>
+}

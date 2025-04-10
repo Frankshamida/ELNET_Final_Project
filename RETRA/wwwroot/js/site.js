@@ -452,3 +452,91 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 /* PAYMENT PROCESSING */
+
+
+document.querySelectorAll('.date-input').forEach(input => {
+    // Store original placeholder
+    const originalPlaceholder = input.placeholder;
+
+    input.addEventListener('focus', function () {
+        if (this.type === 'text') {
+            this.type = 'date';
+            this.style.paddingLeft = '12px'; // Reduce padding when showing date picker
+            if (window.innerWidth <= 768) {
+                setTimeout(() => this.click(), 100);
+            }
+        }
+    });
+
+    input.addEventListener('blur', function () {
+        if (this.value === '' && this.type === 'date') {
+            this.type = 'text';
+            this.placeholder = originalPlaceholder;
+            this.style.paddingLeft = '30px'; // Restore padding for icon
+        }
+    });
+});
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Room selection functionality
+    const selectButtons = document.querySelectorAll('.select-btn');
+    
+    selectButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // First remove all selected states
+            document.querySelectorAll('.room-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            document.querySelectorAll('.select-btn').forEach(btn => {
+                btn.classList.remove('selected');
+                btn.innerHTML = '<i class="fas fa-plus"></i> Select';
+            });
+            
+            // Add selected state to clicked room
+            const roomCard = this.closest('.room-card');
+            roomCard.classList.add('selected');
+            this.classList.add('selected');
+            this.innerHTML = '<i class="fas fa-check"></i> Selected';
+        });
+    });
+    
+    // Date validation
+    const checkInDate = document.getElementById('checkInDate');
+    const checkOutDate = document.getElementById('checkOutDate');
+    
+    // Set minimum dates (today)
+    const today = new Date().toISOString().split('T')[0];
+    checkInDate.min = today;
+    
+    checkInDate.addEventListener('change', function() {
+        if (this.value) {
+            const nextDay = new Date(this.value);
+            nextDay.setDate(nextDay.getDate() + 1);
+            checkOutDate.min = nextDay.toISOString().split('T')[0];
+            
+            if (checkOutDate.value && new Date(checkOutDate.value) <= new Date(this.value)) {
+                checkOutDate.value = '';
+            }
+        }
+    });
+    
+    // Form submission
+    const bookingForm = document.getElementById('bookingForm');
+    bookingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validate room selection
+        const selectedRoom = document.querySelector('.room-card.selected');
+        if (!selectedRoom) {
+            alert('Please select a room to continue with the booking.');
+            return;
+        }
+        
+        // Here you would typically send the form data to your backend
+        alert('Booking submitted successfully!');
+        // bookingForm.reset();
+    });
+});

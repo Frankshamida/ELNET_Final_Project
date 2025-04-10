@@ -8,11 +8,456 @@
     <div class="dashboard-header">
         <div>
             <h2>
-                <i class="fas fa-address-book"></i> DIRECTORY
+                <i class="fas fa-address-book"></i> GUEST DIRECTORY
             </h2>
-
         </div>
     </div>
 
+    <!-- Directory Content -->
+    <div class="directory-container">
+        <!-- Search and Filter Section -->
+        <div class="directory-controls">
+            <div class="search-box">
+                <input type="text" id="guestSearch" class="form-control" placeholder="Search guests...">
+                <button class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+
+            <div class="filter-options">
+                <select class="form-control">
+                    <option>All Guests</option>
+                    <option>Checked In</option>
+                    <option>Checked Out</option>
+                    <option>VIP Guests</option>
+                </select>
+
+                <button class="btn btn-secondary">
+                    <i class="fas fa-filter"></i> Filter
+                </button>
+            </div>
+        </div>
+
+        <!-- Guest List Table -->
+        <div class="guest-list-card">
+            <div class="guest-list-header">
+                <h3><i class="fas fa-users"></i> Current Guests</h3>
+                <span class="badge badge-primary">24 Guests</span>
+            </div>
+
+            <div class="table-responsive">
+                <table class="guest-table">
+                    <thead>
+                        <tr>
+                            <th>Room #</th>
+                            <th>Guest Name</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>305</td>
+                            <td>John Smith</td>
+                            <td>05/15/2023</td>
+                            <td>05/18/2023</td>
+                            <td><span class="status-badge checked-in">Checked In</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-sign-out-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>412</td>
+                            <td>Sarah Johnson</td>
+                            <td>05/16/2023</td>
+                            <td>05/20/2023</td>
+                            <td><span class="status-badge checked-in">Checked In</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-sign-out-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>208</td>
+                            <td>Robert Davis (VIP)</td>
+                            <td>05/10/2023</td>
+                            <td>05/25/2023</td>
+                            <td><span class="status-badge checked-in">Checked In</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-sign-out-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>501</td>
+                            <td>Emily Wilson</td>
+                            <td>05/17/2023</td>
+                            <td>05/19/2023</td>
+                            <td><span class="status-badge checked-out">Checked Out</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-secondary"><i class="fas fa-receipt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>321</td>
+                            <td>Michael Brown</td>
+                            <td>05/18/2023</td>
+                            <td>05/22/2023</td>
+                            <td><span class="status-badge checked-in">Checked In</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-sign-out-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <div class="pagination-info">
+                    Showing 1 to 5 of 24 entries
+                </div>
+                <div class="pagination-controls">
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Previous</button>
+                    <button class="btn btn-sm btn-outline-primary active">1</button>
+                    <button class="btn btn-sm btn-outline-primary">2</button>
+                    <button class="btn btn-sm btn-outline-primary">3</button>
+                    <button class="btn btn-sm btn-outline-primary">4</button>
+                    <button class="btn btn-sm btn-outline-primary">5</button>
+                    <button class="btn btn-sm btn-outline-secondary">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guest Detail Modal (hidden by default) -->
+        <div class="guest-detail-modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-user"></i> Guest Details</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="guest-info">
+                        <div class="info-row">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">John Smith</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Room:</span>
+                            <span class="info-value">305 (Deluxe Room)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Check-In:</span>
+                            <span class="info-value">05/15/2023 2:45 PM</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Check-Out:</span>
+                            <span class="info-value">05/18/2023 11:00 AM</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Contact:</span>
+                            <span class="info-value">john.smith@example.com | (555) 123-4567</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Special Requests:</span>
+                            <span class="info-value">Extra pillows, late checkout requested</span>
+                        </div>
+                    </div>
+
+                    <div class="guest-charges">
+                        <h4><i class="fas fa-receipt"></i> Current Charges</h4>
+                        <table>
+                            <tr>
+                                <td>Room Charges (3 nights):</td>
+                                <td>$450.00</td>
+                            </tr>
+                            <tr>
+                                <td>Room Service:</td>
+                                <td>$78.50</td>
+                            </tr>
+                            <tr>
+                                <td>Taxes:</td>
+                                <td>$42.23</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td>Balance Due:</td>
+                                <td>$570.73</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary close-modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-print"></i> Print Summary</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* Directory Specific Styles */
+    .directory-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .directory-controls {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search-box, .filter-options {
+        display: flex;
+        gap: 10px;
+    }
+
+        .search-box input, .filter-options select {
+            min-width: 250px;
+        }
+
+    .guest-list-card {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .guest-list-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .guest-list-header h3 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .guest-list-header h3 i {
+                color: #3498db;
+            }
+
+    .guest-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .guest-table th {
+            background-color: #f8f9fa;
+            color: #7f8c8d;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .guest-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+        }
+
+        .guest-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+    .status-badge {
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+        .status-badge.checked-in {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .status-badge.checked-out {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+    .btn-sm {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .table-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .pagination-controls {
+        display: flex;
+        gap: 5px;
+    }
+
+    .guest-detail-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        background: white;
+        border-radius: 8px;
+        width: 800px;
+        max-width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-header {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .modal-header h3 {
+            color: #2c3e50;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+    .close-modal {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #7f8c8d;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .guest-info {
+        margin-bottom: 30px;
+    }
+
+    .info-row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: #7f8c8d;
+        width: 150px;
+    }
+
+    .info-value {
+        flex: 1;
+    }
+
+    .guest-charges table {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .guest-charges td {
+        padding: 8px 0;
+    }
+
+        .guest-charges td:last-child {
+            text-align: right;
+        }
+
+    .total-row td {
+        font-weight: 600;
+        color: #2c3e50;
+        border-top: 1px solid #eee;
+        padding-top: 12px;
+    }
+
+    .modal-footer {
+        padding: 15px 20px;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mock search functionality
+        document.querySelector('.search-box button').addEventListener('click', function() {
+            const searchTerm = document.getElementById('guestSearch').value;
+            if (searchTerm) {
+                toastr.info(`Searching for "${searchTerm}"... (mock)`);
+            } else {
+                toastr.error('Please enter a search term');
+            }
+        });
+
+        // Mock filter functionality
+        document.querySelector('.filter-options button').addEventListener('click', function() {
+            toastr.info('Applying filters... (mock)');
+        });
+
+        // Mock pagination
+        document.querySelectorAll('.pagination-controls button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (!this.disabled) {
+                    document.querySelector('.pagination-controls .active').classList.remove('active');
+                    this.classList.add('active');
+                    toastr.info('Loading page... (mock)');
+                }
+            });
+        });
+
+        // Mock view details
+        document.querySelectorAll('.btn-info').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.guest-detail-modal').style.display = 'flex';
+            });
+        });
+
+        // Mock check-out
+        document.querySelectorAll('.btn-danger').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (confirm('Initiate check-out for this guest?')) {
+                    toastr.success('Check-out initiated! (mock)');
+                }
+            });
+        });
+
+        // Close modal
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.guest-detail-modal').style.display = 'none';
+            });
+        });
+    });
+</script>

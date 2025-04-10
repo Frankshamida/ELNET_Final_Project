@@ -1,0 +1,302 @@
+﻿@{
+    ViewData["Title"] = "Booking Confirmation";
+}
+
+<div class="container">
+    <div class="header">
+        <h1>Booking Confirmation</h1>
+        <p class="returning-customer">Returning customer? <a href="/Account/Login">Click here to log in</a></p>
+    </div>
+
+    <div class="content">
+        <div class="booking-details">
+            <h2>Booking Details</h2>
+            <div class="detail-section">
+                <div class="detail-row">
+                    <div class="detail-label">Check-in:</div>
+                    <div class="detail-value">11 April 2025, from 14:00</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Check-out:</div>
+                    <div class="detail-value">12 April 2025, until 12:00</div>
+                </div>
+            </div>
+
+            <div class="accommodation-section">
+                <h3>Accommodation #1</h3>
+                <div class="detail-row">
+                    <div class="detail-label">Accommodation Type:</div>
+                    <div class="detail-value">The Bliss Package</div>
+                </div>
+                <div class="guest-details">
+                    <div class="form-group">
+                        <label for="adults1">Adults *</label>
+                        <select id="adults1" class="form-control">
+                            <option>Select</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guestName1">Full Guest Name *</label>
+                        <input type="text" id="guestName1" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="accommodation-section">
+                <h3>Accommodation #2</h3>
+                <div class="detail-row">
+                    <div class="detail-label">Accommodation Type:</div>
+                    <div class="detail-value">The Bliss Package</div>
+                </div>
+                <div class="guest-details">
+                    <div class="form-group">
+                        <label for="adults2">Adults *</label>
+                        <select id="adults2" class="form-control">
+                            <option>Select</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guestName2">Full Guest Name *</label>
+                        <input type="text" id="guestName2" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coupon-section">
+            <h2>Coupon Code:</h2>
+            <div class="coupon-apply">
+                <input type="text" class="form-control" placeholder="Enter coupon code">
+                <button class="apply-button">Apply</button>
+            </div>
+
+            <div class="price-breakdown">
+                <h3>Price Breakdown</h3>
+                <div class="price-item">
+                    <span class="item-name">#1 The Bliss Package</span>
+                    <span class="item-price">₱6,988</span>
+                </div>
+                <div class="price-item">
+                    <span class="item-name">#2 The Bliss Package</span>
+                    <span class="item-price">₱6,988</span>
+                </div>
+                <div class="price-total">
+                    <span class="total-label">Total</span>
+                    <span class="total-price">₱13,976</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-info">
+            <h2>Your Information</h2>
+            <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" class="form-control">
+            </div>
+        </div>
+
+        <div class="valid-id">
+            <h2>Valid ID</h2>
+            <div class="file-upload">
+                <input type="file" id="validId" accept=".jpg,.jpeg,.png">
+                <label for="validId">[Choose File]</label>
+                <span class="file-info">No file chosen</span>
+            </div>
+            <p class="file-requirements">Maximum upload file size: 4 MB. Accepted file types: Jpg, Jpeg, png.</p>
+            <p>Please upload your valid ID to facilitate pre-check in (required especially for corporate partners)</p>
+        </div>
+
+        <div class="bed-choice">
+            <h2>Bed Choice *</h2>
+            <div class="bed-option">
+                <span>Twin Beds</span>
+                <span class="selected">✔</span>
+            </div>
+            <p class="note">Please note that Bed choice will be subject to confirmation upon check-in and dependent on booked rooms</p>
+        </div>
+
+        <div class="notes-section">
+            <h2>Notes</h2>
+            <textarea class="form-control" placeholder="Special Requests or info about your stay that you wish to share with us"></textarea>
+            <div class="form-check">
+                <input type="checkbox" id="createAccount" class="form-check-input">
+                <label for="createAccount" class="form-check-label">Create an account</label>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <h2>Payment Method</h2>
+            <h3>Online Payments</h3>
+            <p class="error-message">The number of adults is not valid.</p>
+            <div class="form-check">
+                <input type="checkbox" id="acceptTerms" class="form-check-input">
+                <label for="acceptTerms" class="form-check-label">I've read and accept the <a href="/Home/TermsAndConditions" target="_blank">terms & conditions</a>.*</label>
+            </div>
+        </div>
+
+        <div class="confirmation-footer">
+            <p class="welcome-message">We look forward to seeing you soon and hope you enjoy your stay at The Maximilian Hotel.</p>
+            <a asp-action="Checkout" asp-controller="Home" class="book-now-button" style="text-decoration: none;">
+                <span>Book Now</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .book-now-button{
+        text-align:center;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .header h1 {
+        color: #333;
+        font-size: 28px;
+    }
+
+    .returning-customer {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .detail-section, .accommodation-section, .coupon-section, 
+    .personal-info, .valid-id, .bed-choice, .notes-section, 
+    .payment-section {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .detail-row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .detail-label {
+        font-weight: bold;
+        width: 150px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .coupon-apply {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .apply-button {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .price-item, .price-total {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    .price-total {
+        font-weight: bold;
+        border-top: 1px solid #eee;
+        margin-top: 8px;
+        padding-top: 12px;
+    }
+
+    .file-upload {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .bed-option {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #f9f9f9;
+        border-radius: 4px;
+    }
+
+    .selected {
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    .note, .file-requirements {
+        font-size: 14px;
+        color: #666;
+        font-style: italic;
+    }
+
+    .error-message {
+        color: #f44336;
+        font-size: 14px;
+    }
+
+    .book-now-button {
+        background: #2196F3;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .welcome-message {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+    }
+</style>

@@ -10,9 +10,318 @@
             <h2>
                 <i class="fas fa-sign-out-alt"></i> CHECK-OUT
             </h2>
-
         </div>
     </div>
 
+    <!-- Check-Out Form -->
+    <div class="checkout-form-container">
+        <div class="checkout-card">
+            <h3><i class="fas fa-user-times"></i> Guest Check-Out</h3>
+
+            <div class="checkout-form">
+                <div class="form-group">
+                    <label for="roomNumberCheckout">Room Number</label>
+                    <input type="text" id="roomNumberCheckout" class="form-control" placeholder="Enter room #">
+                </div>
+
+                <div class="form-group">
+                    <label for="guestNameCheckout">Guest Name</label>
+                    <input type="text" id="guestNameCheckout" class="form-control" placeholder="Guest name" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkInDateCheckout">Check-In Date</label>
+                    <input type="text" id="checkInDateCheckout" class="form-control" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkOutDateCheckout">Check-Out Date</label>
+                    <input type="text" id="checkOutDateCheckout" class="form-control" value="@DateTime.Now.ToString("MM/dd/yyyy")" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="nightsStayed">Nights Stayed</label>
+                    <input type="text" id="nightsStayed" class="form-control" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="totalCharges">Total Charges</label>
+                    <input type="text" id="totalCharges" class="form-control" value="$0.00" readonly>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-primary" id="findRoomBtn">
+                        <i class="fas fa-search"></i> Find Guest
+                    </button>
+                    <button class="btn btn-danger" id="checkOutBtn" disabled>
+                        <i class="fas fa-check-circle"></i> Complete Check-Out
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-success" style="display: none;">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Check-Out Successful!</h3>
+            <p>Room <span id="successCheckoutRoom">305</span> is now available.</p>
+            <div class="receipt-summary">
+                <h4>Receipt Summary</h4>
+                <table>
+                    <tr>
+                        <td>Room Charges (3 nights):</td>
+                        <td>$450.00</td>
+                    </tr>
+                    <tr>
+                        <td>Room Service:</td>
+                        <td>$78.50</td>
+                    </tr>
+                    <tr>
+                        <td>Taxes:</td>
+                        <td>$42.23</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>Total:</td>
+                        <td>$570.73</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="success-actions">
+                <button class="btn btn-primary" id="printReceiptBtn">
+                    <i class="fas fa-print"></i> Print Receipt
+                </button>
+                <button class="btn btn-success" id="emailReceiptBtn">
+                    <i class="fas fa-envelope"></i> Email Receipt
+                </button>
+                <button class="btn btn-secondary" id="newCheckoutBtn">
+                    <i class="fas fa-plus"></i> New Check-Out
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* Check-Out Specific Styles */
+    .checkout-form-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .checkout-card {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+        .checkout-card h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .checkout-card h3 i {
+                color: #e74c3c;
+            }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #3498db;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+    .btn-danger {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+
+        .btn-danger:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+
+    .btn-success {
+        background-color: #2ecc71;
+        color: white;
+    }
+
+    .checkout-success {
+        text-align: center;
+        padding: 30px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .success-icon {
+        font-size: 50px;
+        color: #2ecc71;
+        margin-bottom: 20px;
+    }
+
+        .success-icon i {
+            animation: bounce 0.5s;
+        }
+
+    .receipt-summary {
+        margin: 25px 0;
+        text-align: left;
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+        .receipt-summary h4 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .receipt-summary table {
+            width: 100%;
+        }
+
+        .receipt-summary td {
+            padding: 5px 0;
+        }
+
+            .receipt-summary td:last-child {
+                text-align: right;
+                font-weight: bold;
+            }
+
+    .total-row td {
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        font-size: 1.1em;
+        color: #2c3e50;
+    }
+
+    .success-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+</style>
+
+<script>
+    // Simple static functionality for the demo
+    document.addEventListener('DOMContentLoaded', function() {
+        const findRoomBtn = document.getElementById('findRoomBtn');
+        const checkOutBtn = document.getElementById('checkOutBtn');
+        const newCheckoutBtn = document.getElementById('newCheckoutBtn');
+        const checkoutForm = document.querySelector('.checkout-form');
+        const checkoutSuccess = document.querySelector('.checkout-success');
+
+        // Mock "Find Guest" functionality
+        findRoomBtn.addEventListener('click', function() {
+            const roomNumber = document.getElementById('roomNumberCheckout').value;
+
+            if (roomNumber) {
+                // In a real app, this would call your backend
+                // For demo, we'll just populate with mock data
+                document.getElementById('guestNameCheckout').value = "John Smith";
+                document.getElementById('checkInDateCheckout').value = "@DateTime.Now.AddDays(-3).ToString("MM/dd/yyyy")";
+                document.getElementById('nightsStayed').value = "3";
+                document.getElementById('totalCharges').value = "$570.73";
+
+                // Enable check-out button
+                checkOutBtn.disabled = false;
+
+                // Show a mock success message
+                toastr.success('Guest information loaded! Ready for check-out.');
+            } else {
+                toastr.error('Please enter a room number');
+            }
+        });
+
+        // Mock "Check Out" functionality
+        checkOutBtn.addEventListener('click', function() {
+            // In a real app, this would call your backend
+            // For demo, we'll just show the success message
+            checkoutForm.style.display = 'none';
+            checkoutSuccess.style.display = 'block';
+
+            // Show a mock success message
+            toastr.success('Guest checked out successfully!');
+        });
+
+        // Reset form for new check-out
+        newCheckoutBtn.addEventListener('click', function() {
+            checkoutForm.style.display = 'block';
+            checkoutSuccess.style.display = 'none';
+
+            // Reset form
+            document.getElementById('roomNumberCheckout').value = '';
+            document.getElementById('guestNameCheckout').value = '';
+            document.getElementById('checkInDateCheckout').value = '';
+            document.getElementById('nightsStayed').value = '';
+            document.getElementById('totalCharges').value = '$0.00';
+            checkOutBtn.disabled = true;
+        });
+
+        // Mock print receipt
+        document.getElementById('printReceiptBtn').addEventListener('click', function() {
+            toastr.info('Printing receipt... (mock)');
+        });
+
+        // Mock email receipt
+        document.getElementById('emailReceiptBtn').addEventListener('click', function() {
+            toastr.info('Emailing receipt... (mock)');
+        });
+    });
+</script>

@@ -10,9 +10,225 @@
             <h2>
                 <i class="fas fa-sign-in-alt"></i> CHECK-IN
             </h2>
-
         </div>
     </div>
 
+    <!-- Check-In Form -->
+    <div class="checkin-form-container">
+        <div class="checkin-card">
+            <h3><i class="fas fa-user-check"></i> Guest Check-In</h3>
+
+            <div class="checkin-form">
+                <div class="form-group">
+                    <label for="reservationNumber">Reservation Number</label>
+                    <input type="text" id="reservationNumber" class="form-control" placeholder="Enter reservation #">
+                </div>
+
+                <div class="form-group">
+                    <label for="guestName">Guest Name</label>
+                    <input type="text" id="guestName" class="form-control" placeholder="Guest full name" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="roomNumber">Room Number</label>
+                    <input type="text" id="roomNumber" class="form-control" placeholder="Room #" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkInDate">Check-In Date</label>
+                    <input type="text" id="checkInDate" class="form-control" value="@DateTime.Now.ToString("MM/dd/yyyy")" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkOutDate">Check-Out Date</label>
+                    <input type="text" id="checkOutDate" class="form-control" readonly>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-primary" id="findReservationBtn">
+                        <i class="fas fa-search"></i> Find Reservation
+                    </button>
+                    <button class="btn btn-success" id="checkInBtn" disabled>
+                        <i class="fas fa-check-circle"></i> Complete Check-In
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkin-success" style="display: none;">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Check-In Successful!</h3>
+            <p>Guest has been checked in to Room <span id="successRoomNumber">305</span>.</p>
+            <button class="btn btn-primary" id="newCheckInBtn">
+                <i class="fas fa-plus"></i> New Check-In
+            </button>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* Check-In Specific Styles */
+    .checkin-form-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .checkin-card {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+        .checkin-card h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .checkin-card h3 i {
+                color: #3498db;
+            }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #3498db;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+    .btn-success {
+        background-color: #2ecc71;
+        color: white;
+    }
+
+        .btn-success:hover {
+            background-color: #27ae60;
+        }
+
+        .btn-success:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+
+    .checkin-success {
+        text-align: center;
+        padding: 30px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .success-icon {
+        font-size: 50px;
+        color: #2ecc71;
+        margin-bottom: 20px;
+    }
+
+        .success-icon i {
+            animation: bounce 0.5s;
+        }
+
+
+</style>
+
+<script>
+    // Simple static functionality for the demo
+    document.addEventListener('DOMContentLoaded', function() {
+        const findReservationBtn = document.getElementById('findReservationBtn');
+        const checkInBtn = document.getElementById('checkInBtn');
+        const newCheckInBtn = document.getElementById('newCheckInBtn');
+        const checkinForm = document.querySelector('.checkin-form');
+        const checkinSuccess = document.querySelector('.checkin-success');
+
+        // Mock "Find Reservation" functionality
+        findReservationBtn.addEventListener('click', function() {
+            const reservationNumber = document.getElementById('reservationNumber').value;
+
+            if (reservationNumber) {
+                // In a real app, this would call your backend
+                // For demo, we'll just populate with mock data
+                document.getElementById('guestName').value = "John Smith";
+                document.getElementById('roomNumber').value = "305";
+                document.getElementById('checkOutDate').value = "@DateTime.Now.AddDays(3).ToString("MM/dd/yyyy")";
+
+                // Enable check-in button
+                checkInBtn.disabled = false;
+
+                // Show a mock success message
+                toastr.success('Reservation found! Ready for check-in.');
+            } else {
+                toastr.error('Please enter a reservation number');
+            }
+        });
+
+        // Mock "Check In" functionality
+        checkInBtn.addEventListener('click', function() {
+            // In a real app, this would call your backend
+            // For demo, we'll just show the success message
+            checkinForm.style.display = 'none';
+            checkinSuccess.style.display = 'block';
+
+            // Show a mock success message
+            toastr.success('Guest checked in successfully!');
+        });
+
+        // Reset form for new check-in
+        newCheckInBtn.addEventListener('click', function() {
+            checkinForm.style.display = 'block';
+            checkinSuccess.style.display = 'none';
+
+            // Reset form
+            document.getElementById('reservationNumber').value = '';
+            document.getElementById('guestName').value = '';
+            document.getElementById('roomNumber').value = '';
+            document.getElementById('checkOutDate').value = '';
+            checkInBtn.disabled = true;
+        });
+    });
+</script>

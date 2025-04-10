@@ -3,16 +3,224 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="admin-dashboard">
-    <!-- Header -->
-    <div class="dashboard-header">
-        <div>
+<div class="booking-container">
+    <!-- Booking Form Section -->
+    <div class="booking-form-section">
+        <div class="booking-form-header">
             <h2>
-                <i class="fas fa-calendar-plus"></i> NEW BOOKING
+                <i class="fas fa-calendar-plus" style="margin-right: 10px;"></i>
+                New Booking
             </h2>
+            <p>Create a new reservation for your guest</p>
+        </div>
 
+        <form id="bookingForm">
+            <!-- Dates Section -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label" for="checkInDate">Check-In Date</label>
+                    <input type="date" class="form-control" id="checkInDate" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="checkOutDate">Check-Out Date</label>
+                    <input type="date" class="form-control" id="checkOutDate" required>
+                </div>
+            </div>
+
+            <!-- Guests Section -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label" for="adults">Adults</label>
+                    <select class="form-control" id="adults" required>
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="children">Children</label>
+                    <select class="form-control" id="children">
+                        <option value="0">No Children</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Room Type Filter -->
+            <div class="form-group">
+                <label class="form-label" for="roomType">Room Type</label>
+                <select class="form-control" id="roomType">
+                    <option value="all">All Room Types</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suite</option>
+                    <option value="standard">Standard</option>
+                    <option value="family">Family</option>
+                </select>
+            </div>
+
+            <!-- Guest Information Section -->
+            <div class="guest-info-section">
+                <h3 style="margin-bottom: 20px; color: #2c3e50; font-size: 1.2rem;">Guest Information</h3>
+
+                <div class="form-group">
+                    <label class="form-label" for="guestName">Full Name</label>
+                    <input type="text" class="form-control" id="guestName" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="guestEmail">Email</label>
+                        <input type="email" class="form-control" id="guestEmail" placeholder="guest@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="guestPhone">Phone</label>
+                        <input type="tel" class="form-control" id="guestPhone" placeholder="+1 (123) 456-7890" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="specialRequests">Special Requests</label>
+                    <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any special requirements or notes..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="paymentMethod">Payment Method</label>
+                    <select class="form-control" id="paymentMethod" required>
+                        <option value="">Select payment method</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="cash">Cash</option>
+                        <option value="invoice">Invoice to Company</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-check-circle" style="margin-right: 8px;"></i>
+                    Confirm Booking
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Available Rooms Section -->
+    <div class="available-rooms-section">
+        <div class="rooms-header">
+            <h2>Available Rooms</h2>
+            <span class="room-count">12 rooms found</span>
+        </div>
+
+        <!-- Room Cards -->
+        <div class="room-card selected">
+            <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1566669437685-b9e6c0b96abd" alt="Deluxe Room">
+            </div>
+            <div class="room-details">
+                <h3 class="room-title">Deluxe Ocean View</h3>
+                <p class="room-description">
+                    Spacious room with king-size bed, private balcony overlooking the ocean, and premium amenities.
+                    Perfect for couples or business travelers seeking comfort and luxury.
+                </p>
+                <div class="room-features">
+                    <span class="feature-badge"><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span class="feature-badge"><i class="fas fa-coffee"></i> Breakfast</span>
+                    <span class="feature-badge"><i class="fas fa-tv"></i> Smart TV</span>
+                    <span class="feature-badge"><i class="fas fa-snowflake"></i> AC</span>
+                    <span class="feature-badge"><i class="fas fa-swimming-pool"></i> Pool Access</span>
+                </div>
+                <div class="room-footer">
+                    <div class="room-price">
+                        $249 <small>/night</small>
+                    </div>
+                    <button class="select-btn selected">
+                        <i class="fas fa-check"></i> Selected
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6" alt="Executive Suite">
+            </div>
+            <div class="room-details">
+                <h3 class="room-title">Executive Suite</h3>
+                <p class="room-description">
+                    Luxurious suite with separate living area, work desk, and premium bathroom amenities.
+                    Ideal for business travelers or guests who appreciate extra space.
+                </p>
+                <div class="room-features">
+                    <span class="feature-badge"><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span class="feature-badge"><i class="fas fa-coffee"></i> Breakfast</span>
+                    <span class="feature-badge"><i class="fas fa-tv"></i> Smart TV</span>
+                    <span class="feature-badge"><i class="fas fa-utensils"></i> Mini Bar</span>
+                    <span class="feature-badge"><i class="fas fa-concierge-bell"></i> 24/7 Room Service</span>
+                </div>
+                <div class="room-footer">
+                    <div class="room-price">
+                        $349 <small>/night</small>
+                    </div>
+                    <button class="select-btn">
+                        <i class="fas fa-plus"></i> Select
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39" alt="Family Room">
+            </div>
+            <div class="room-details">
+                <h3 class="room-title">Family Room</h3>
+                <p class="room-description">
+                    Large room with two queen beds, extra seating area, and child-friendly amenities.
+                    Can accommodate up to 2 adults and 2 children comfortably.
+                </p>
+                <div class="room-features">
+                    <span class="feature-badge"><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span class="feature-badge"><i class="fas fa-gamepad"></i> Kids' Activities</span>
+                    <span class="feature-badge"><i class="fas fa-couch"></i> Extra Space</span>
+                    <span class="feature-badge"><i class="fas fa-baby-carriage"></i> Baby Cot Available</span>
+                </div>
+                <div class="room-footer">
+                    <div class="room-price">
+                        $199 <small>/night</small>
+                    </div>
+                    <button class="select-btn">
+                        <i class="fas fa-plus"></i> Select
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304" alt="Standard Room">
+            </div>
+            <div class="room-details">
+                <h3 class="room-title">Standard Room</h3>
+                <p class="room-description">
+                    Comfortable room with queen bed and all essential amenities.
+                    Great for budget-conscious travelers who still want quality accommodation.
+                </p>
+                <div class="room-features">
+                    <span class="feature-badge"><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span class="feature-badge"><i class="fas fa-tv"></i> Smart TV</span>
+                    <span class="feature-badge"><i class="fas fa-mug-hot"></i> Tea/Coffee</span>
+                </div>
+                <div class="room-footer">
+                    <div class="room-price">
+                        $129 <small>/night</small>
+                    </div>
+                    <button class="select-btn">
+                        <i class="fas fa-plus"></i> Select
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-</div>
 

@@ -10,8 +10,272 @@
             <h2>
                 <i class="fas fa-receipt"></i> MY BOOKINGS
             </h2>
+        </div>
+    </div>
 
+    <!-- Search Bar -->
+    <div class="search-section">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search bookings...">
+            <button class="apply-button">Search</button>
+        </div>
+    </div>
+
+    <!-- Current Bookings -->
+    <div class="booking-section">
+        <h3>Current Bookings</h3>
+        <div class="booking-list">
+            <!-- Booking Item 1 -->
+            <div class="booking-item">
+                <div class="booking-header">
+                    <span class="booking-id">Booking #12345</span>
+                    <span class="booking-status confirmed">Confirmed</span>
+                </div>
+                <div class="booking-details">
+                    <div class="detail-row">
+                        <div class="detail-label">Check-in:</div>
+                        <div class="detail-value">11 April 2025, from 14:00</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Check-out:</div>
+                        <div class="detail-value">12 April 2025, until 12:00</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Accommodation:</div>
+                        <div class="detail-value">The Bliss Package</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Total Price:</div>
+                        <div class="detail-value">₱6,988</div>
+                    </div>
+                </div>
+                <div class="booking-actions">
+                    <button class="action-button view">View Details</button>
+                    <button class="action-button cancel">Cancel Booking</button>
+                </div>
+            </div>
+
+            <!-- Booking Item 2 -->
+            <div class="booking-item">
+                <div class="booking-header">
+                    <span class="booking-id">Booking #12346</span>
+                    <span class="booking-status pending">Pending</span>
+                </div>
+                <div class="booking-details">
+                    <div class="detail-row">
+                        <div class="detail-label">Check-in:</div>
+                        <div class="detail-value">15 April 2025, from 14:00</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Check-out:</div>
+                        <div class="detail-value">17 April 2025, until 12:00</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Accommodation:</div>
+                        <div class="detail-value">Deluxe Suite</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Total Price:</div>
+                        <div class="detail-value">₱12,500</div>
+                    </div>
+                </div>
+                <div class="booking-actions">
+                    <button class="action-button view">View Details</button>
+                    <button class="action-button cancel">Cancel Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Past Bookings -->
+    <div class="booking-section">
+        <h3>Past Bookings</h3>
+        <div class="booking-list">
+            <!-- Past Booking Item 1 -->
+            <div class="booking-item past">
+                <div class="booking-header">
+                    <span class="booking-id">Booking #12001</span>
+                    <span class="booking-status completed">Completed</span>
+                </div>
+                <div class="booking-details">
+                    <div class="detail-row">
+                        <div class="detail-label">Check-in:</div>
+                        <div class="detail-value">10 March 2025, from 14:00</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Check-out:</div>
+                        <div class="detail-value">12 March 2025, until 12:00</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Accommodation:</div>
+                        <div class="detail-value">Standard Room</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Total Price:</div>
+                        <div class="detail-value">₱5,200</div>
+                    </div>
+                </div>
+                <div class="booking-actions">
+                    <button class="action-button view">View Details</button>
+                    <button class="action-button review">Leave Review</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+<style>
+    .admin-dashboard {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .dashboard-header {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .dashboard-header h2 {
+            color: #333;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+    .search-section {
+        margin-bottom: 30px;
+    }
+
+        .search-section .form-group {
+            display: flex;
+            gap: 10px;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .apply-button {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .booking-section {
+        margin-bottom: 40px;
+    }
+
+        .booking-section h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+    .booking-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .booking-item {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+        .booking-item.past {
+            opacity: 0.8;
+            background: #f9f9f9;
+        }
+
+    .booking-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .booking-id {
+        font-weight: bold;
+    }
+
+    .booking-status {
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+        .booking-status.confirmed {
+            background: #dff0d8;
+            color: #3c763d;
+        }
+
+        .booking-status.pending {
+            background: #fcf8e3;
+            color: #8a6d3b;
+        }
+
+        .booking-status.completed {
+            background: #d9edf7;
+            color: #31708f;
+        }
+
+    .detail-row {
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    .detail-label {
+        font-weight: bold;
+        width: 150px;
+    }
+
+    .booking-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .action-button {
+        padding: 8px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        background: white;
+    }
+
+        .action-button.view {
+            background: #2196F3;
+            color: white;
+            border: none;
+        }
+
+        .action-button.cancel {
+            background: #f44336;
+            color: white;
+            border: none;
+        }
+
+        .action-button.review {
+            background: #ff9800;
+            color: white;
+            border: none;
+        }
+</style>

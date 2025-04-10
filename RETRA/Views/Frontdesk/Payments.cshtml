@@ -8,11 +8,685 @@
     <div class="dashboard-header">
         <div>
             <h2>
-                <i class="fas fa-calendar-plus"></i> PAYMENTS
+                <i class="fas fa-credit-card"></i> PAYMENTS
             </h2>
-
         </div>
     </div>
 
+    <!-- Payments Content -->
+    <div class="payments-container">
+        <!-- Filter and Search Controls -->
+        <div class="payments-controls">
+            <div class="search-box">
+                <input type="text" id="paymentSearch" class="form-control" placeholder="Search payments...">
+                <button class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+            
+            <div class="filter-options">
+                <select class="form-control">
+                    <option>All Payments</option>
+                    <option>Completed</option>
+                    <option>Pending</option>
+                    <option>Refunded</option>
+                    <option>Failed</option>
+                </select>
+                
+                <select class="form-control">
+                    <option>All Payment Methods</option>
+                    <option>Credit Card</option>
+                    <option>Cash</option>
+                    <option>Bank Transfer</option>
+                    <option>Mobile Payment</option>
+                </select>
+                
+                <input type="date" class="form-control" id="paymentDateFilter">
+                
+                <button class="btn btn-primary">
+                    <i class="fas fa-filter"></i> Apply
+                </button>
+            </div>
+        </div>
+
+        <!-- Payments Summary Cards -->
+        <div class="payment-statistics">
+            <div class="stat-card">
+                <div class="stat-value">$12,450</div>
+                <div class="stat-label">Today's Revenue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$84,320</div>
+                <div class="stat-label">This Week</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$326,780</div>
+                <div class="stat-label">This Month</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">48</div>
+                <div class="stat-label">Today's Transactions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Pending Payments</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Refunds Processed</div>
+            </div>
+        </div>
+
+        <!-- Payments Table -->
+        <div class="payments-list-card">
+            <div class="payments-list-header">
+                <h3><i class="fas fa-list"></i> Recent Transactions</h3>
+                <button class="btn btn-success">
+                    <i class="fas fa-plus"></i> New Payment
+                </button>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="payments-table">
+                    <thead>
+                        <tr>
+                            <th>Payment ID</th>
+                            <th>Guest</th>
+                            <th>Room</th>
+                            <th>Amount</th>
+                            <th>Method</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#PAY-2023-00145</td>
+                            <td>John Smith</td>
+                            <td>305</td>
+                            <td>$570.73</td>
+                            <td><span class="payment-method credit-card">Credit Card</span></td>
+                            <td>05/17/2023 10:45 AM</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-receipt"></i></button>
+                                <button class="btn btn-sm btn-warning"><i class="fas fa-undo"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#PAY-2023-00144</td>
+                            <td>Sarah Johnson</td>
+                            <td>412</td>
+                            <td>$320.50</td>
+                            <td><span class="payment-method cash">Cash</span></td>
+                            <td>05/17/2023 9:30 AM</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-receipt"></i></button>
+                                <button class="btn btn-sm btn-warning"><i class="fas fa-undo"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#PAY-2023-00143</td>
+                            <td>Robert Davis</td>
+                            <td>401</td>
+                            <td>$1,250.00</td>
+                            <td><span class="payment-method bank-transfer">Bank Transfer</span></td>
+                            <td>05/16/2023 3:15 PM</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-receipt"></i></button>
+                                <button class="btn btn-sm btn-success"><i class="fas fa-check"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#PAY-2023-00142</td>
+                            <td>Emily Wilson</td>
+                            <td>501</td>
+                            <td>$420.80</td>
+                            <td><span class="payment-method mobile">Mobile Payment</span></td>
+                            <td>05/16/2023 11:20 AM</td>
+                            <td><span class="status-badge refunded">Refunded</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-receipt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#PAY-2023-00141</td>
+                            <td>Michael Brown</td>
+                            <td>321</td>
+                            <td>$380.25</td>
+                            <td><span class="payment-method credit-card">Credit Card</span></td>
+                            <td>05/15/2023 5:45 PM</td>
+                            <td><span class="status-badge failed">Failed</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-receipt"></i></button>
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-sync-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="table-footer">
+                <div class="pagination-info">
+                    Showing 1 to 5 of 48 entries
+                </div>
+                <div class="pagination-controls">
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Previous</button>
+                    <button class="btn btn-sm btn-outline-primary active">1</button>
+                    <button class="btn btn-sm btn-outline-primary">2</button>
+                    <button class="btn btn-sm btn-outline-primary">3</button>
+                    <button class="btn btn-sm btn-outline-primary">4</button>
+                    <button class="btn btn-sm btn-outline-primary">5</button>
+                    <button class="btn btn-sm btn-outline-secondary">Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Payment Detail Modal (hidden by default) -->
+        <div class="payment-detail-modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-receipt"></i> Payment Details</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="payment-info">
+                        <div class="info-row">
+                            <span class="info-label">Payment ID:</span>
+                            <span class="info-value">#PAY-2023-00145</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Guest:</span>
+                            <span class="info-value">John Smith (Room 305)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Payment Date:</span>
+                            <span class="info-value">05/17/2023 10:45 AM</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Payment Method:</span>
+                            <span class="info-value payment-method credit-card">Credit Card (•••• •••• •••• 4242)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Status:</span>
+                            <span class="info-value status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-breakdown">
+                        <h4><i class="fas fa-file-invoice-dollar"></i> Payment Breakdown</h4>
+                        <table>
+                            <tr>
+                                <td>Room Charges (3 nights  $150/night):</td>
+                                <td>$450.00</td>
+                            </tr>
+                            <tr>
+                                <td>Room Service:</td>
+                                <td>$78.50</td>
+                            </tr>
+                            <tr>
+                                <td>Mini Bar:</td>
+                                <td>$32.00</td>
+                            </tr>
+                            <tr>
+                                <td>Taxes (12%):</td>
+                                <td>$67.38</td>
+                            </tr>
+                            <tr>
+                                <td>Discount (Loyalty Member):</td>
+                                <td>-$57.15</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td>Total Paid:</td>
+                                <td>$570.73</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="payment-notes">
+                        <h4><i class="fas fa-sticky-note"></i> Notes</h4>
+                        <textarea class="form-control" rows="3">Guest requested emailed receipt</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary close-modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-print"></i> Print Receipt</button>
+                    <button class="btn btn-success"><i class="fas fa-envelope"></i> Email Receipt</button>
+                    <button class="btn btn-danger"><i class="fas fa-undo"></i> Process Refund</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- New Payment Modal (hidden by default) -->
+        <div class="new-payment-modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-plus-circle"></i> New Payment</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="guestSelect">Guest</label>
+                        <select id="guestSelect" class="form-control">
+                            <option>Select Guest</option>
+                            <option>John Smith (Room 305)</option>
+                            <option>Sarah Johnson (Room 412)</option>
+                            <option>Robert Davis (Room 401)</option>
+                            <option>Emily Wilson (Checked Out)</option>
+                            <option>Michael Brown (Room 321)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="paymentAmount">Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="number" id="paymentAmount" class="form-control" placeholder="0.00">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" class="form-control">
+                            <option>Credit Card</option>
+                            <option>Cash</option>
+                            <option>Bank Transfer</option>
+                            <option>Mobile Payment</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="creditCardFields">
+                        <label>Credit Card Details</label>
+                        <input type="text" class="form-control mb-2" placeholder="Card Number">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Expiry (MM/YY)">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="CVV">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="paymentNotes">Notes</label>
+                        <textarea id="paymentNotes" class="form-control" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary close-modal">Cancel</button>
+                    <button class="btn btn-primary"><i class="fas fa-check"></i> Process Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* Payments Specific Styles */
+    .payments-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .payments-controls {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .search-box, .filter-options {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .search-box input {
+        min-width: 300px;
+    }
+    
+    .filter-options select, .filter-options input {
+        min-width: 150px;
+    }
+    
+    .payment-statistics {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .stat-card {
+        background: white;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .stat-value {
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+    
+    .stat-label {
+        font-size: 14px;
+        color: #7f8c8d;
+    }
+    
+    .payments-list-card {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .payments-list-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .payments-list-header h3 {
+        color: #2c3e50;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .payments-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .payments-table th {
+        background-color: #f8f9fa;
+        color: #7f8c8d;
+        padding: 12px 15px;
+        text-align: left;
+        font-weight: 600;
+    }
+    
+    .payments-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #eee;
+        vertical-align: middle;
+    }
+    
+    .payments-table tr:hover {
+        background-color: #f8f9fa;
+    }
+    
+    .status-badge {
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .status-badge.completed {
+        background-color: #d4edda;
+        color: #155724;
+    }
+    
+    .status-badge.pending {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+    
+    .status-badge.refunded {
+        background-color: #e2e3e5;
+        color: #383d41;
+    }
+    
+    .status-badge.failed {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+    
+    .payment-method {
+        padding: 3px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .payment-method.credit-card {
+        background-color: #d1ecf1;
+        color: #0c5460;
+    }
+    
+    .payment-method.cash {
+        background-color: #d4edda;
+        color: #155724;
+    }
+    
+    .payment-method.bank-transfer {
+        background-color: #e2e3e5;
+        color: #383d41;
+    }
+    
+    .payment-method.mobile {
+        background-color: #d6d8f9;
+        color: #1a237e;
+    }
+    
+    .btn-sm {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    
+    .table-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+    
+    .pagination-controls {
+        display: flex;
+        gap: 5px;
+    }
+    
+    /* Payment Detail Modal */
+    .payment-detail-modal, .new-payment-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    
+    .modal-content {
+        background: white;
+        border-radius: 8px;
+        width: 800px;
+        max-width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .modal-header {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .modal-header h3 {
+        color: #2c3e50;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .close-modal {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #7f8c8d;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .payment-info, .payment-breakdown, .payment-notes {
+        margin-bottom: 25px;
+    }
+    
+    .info-row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .info-label {
+        font-weight: 600;
+        color: #7f8c8d;
+        width: 150px;
+    }
+    
+    .info-value {
+        flex: 1;
+    }
+    
+    .payment-breakdown table {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .payment-breakdown td {
+        padding: 8px 0;
+    }
+    
+    .payment-breakdown td:last-child {
+        text-align: right;
+    }
+    
+    .total-row td {
+        font-weight: 600;
+        color: #2c3e50;
+        border-top: 1px solid #eee;
+        padding-top: 12px;
+    }
+    
+    .modal-footer {
+        padding: 15px 20px;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    
+    /* New Payment Form */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #7f8c8d;
+    }
+    
+    .input-group {
+        display: flex;
+    }
+    
+    .input-group-text {
+        padding: 10px 15px;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+    }
+    
+    .input-group .form-control {
+        border-radius: 0 4px 4px 0;
+    }
+    
+    #creditCardFields {
+        display: none;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Show payment detail modal
+        document.querySelectorAll('.btn-info').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.payment-detail-modal').style.display = 'flex';
+            });
+        });
+        
+        // Show new payment modal
+        document.querySelector('.payments-list-header button').addEventListener('click', function() {
+            document.querySelector('.new-payment-modal').style.display = 'flex';
+        });
+        
+        // Close modals
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.payment-detail-modal').style.display = 'none';
+                document.querySelector('.new-payment-modal').style.display = 'none';
+            });
+        });
+        
+        // Show credit card fields when selected
+        document.getElementById('paymentMethod').addEventListener('change', function() {
+            const ccFields = document.getElementById('creditCardFields');
+            if (this.value === 'Credit Card') {
+                ccFields.style.display = 'block';
+            } else {
+                ccFields.style.display = 'none';
+            }
+        });
+        
+        // Mock search functionality
+        document.querySelector('.search-box button').addEventListener('click', function() {
+            const searchTerm = document.getElementById('paymentSearch').value;
+            if (searchTerm) {
+                toastr.info(`Searching for "${searchTerm}"... (mock)`);
+            } else {
+                toastr.error('Please enter a search term');
+            }
+        });
+        
+        // Mock filter functionality
+        document.querySelector('.filter-options button').addEventListener('click', function() {
+            toastr.info('Applying payment filters... (mock)');
+        });
+        
+        // Mock pagination
+        document.querySelectorAll('.pagination-controls button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (!this.disabled) {
+                    document.querySelector('.pagination-controls .active').classList.remove('active');
+                    this.classList.add('active');
+                    toastr.info('Loading page... (mock)');
+                }
+            });
+        });
+    });
+</script>

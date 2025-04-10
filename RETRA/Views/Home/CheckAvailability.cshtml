@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Check Availability";
+}
+
+<div class="container">
+    <div class="header">
+        <h1>Affordable Rooms For Your Stay</h1>
+    </div>
+
+    <div class="content">
+        <div class="reservation-preview">
+            <h2>Your Reservation Details</h2>
+            <div class="reservation-details">
+                <div class="detail-row">
+                    <div class="detail-label">Arrival Date:</div>
+                    <div class="detail-value">04/09/2025</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Departure Date:</div>
+                    <div class="detail-value">04/09/2025</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Adults:</div>
+                    <div class="detail-value">3</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Children:</div>
+                    <div class="detail-value">2</div>
+                </div>
+            </div>
+            <p><em>Note: Additional materials and products available upon request.</em></p>
+        </div>
+
+        <div class="rooms-available">
+            <h2>Available Rooms (4)</h2>
+
+            <!-- Suite -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1566669437685-5d13cbcde2a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Family Suite">
+                </div>
+                <div class="room-info">
+                    <h3 class="room-title">Family Suite</h3>
+                    <p class="room-description">Spacious suite with one queen bed and two single beds, perfect for families. Features clean bathroom with hot shower.</p>
+                    <div class="room-features">
+                        <span class="feature">Sleeps 5</span>
+                        <span class="feature">1 Bathroom</span>
+                        <span class="feature">City View</span>
+                        <span class="feature">Free WiFi</span>
+                    </div>
+                    <span class="room-price">₱3,500/night</span>
+                    <a asp-action="bookingconfirmation" asp-controller="Home" class="book-button" style="text-decoration: none;">
+                        <span>Book Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Deluxe -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1582719471383-931fb0a684e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Deluxe Room">
+                </div>
+                <div class="room-info">
+                    <h3 class="room-title">Deluxe Room</h3>
+                    <p class="room-description">Comfortable room with one queen bed and small sitting area. Ideal for couples or business travelers.</p>
+                    <div class="room-features">
+                        <span class="feature">Sleeps 3</span>
+                        <span class="feature">1 Bathroom</span>
+                        <span class="feature">Free WiFi</span>
+                        <span class="feature">Work Desk</span>
+                    </div>
+                    <span class="room-price">₱2,800/night</span>
+                    <a asp-action="bookingconfirmation" asp-controller="Home" class="book-button" style="text-decoration: none;">
+                        <span>Book Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Standard Double -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Standard Double">
+                </div>
+                <div class="room-info">
+                    <h3 class="room-title">Standard Double Room</h3>
+                    <p class="room-description">Simple but comfortable room with two single beds, suitable for friends or small families.</p>
+                    <div class="room-features">
+                        <span class="feature">Sleeps 2</span>
+                        <span class="feature">1 Bathroom</span>
+                        <span class="feature">Free WiFi</span>
+                    </div>
+                    <span class="room-price">₱2,200/night</span>
+                    <a asp-action="bookingconfirmation" asp-controller="Home" class="book-button" style="text-decoration: none;">
+                        <span>Book Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Standard Single -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1631049307260-da4ec1d42249?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Standard Single">
+                </div>
+                <div class="room-info">
+                    <h3 class="room-title">Standard Single Room</h3>
+                    <p class="room-description">Budget-friendly single room with one single bed, perfect for solo travelers.</p>
+                    <div class="room-features">
+                        <span class="feature">Sleeps 1</span>
+                        <span class="feature">Shared Bathroom</span>
+                        <span class="feature">Free WiFi</span>
+                    </div>
+                    <span class="room-price">₱1,500/night</span>
+                    <a asp-action="bookingconfirmation" asp-controller="Home" class="book-button" style="text-decoration: none;">
+                        <span>Book Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

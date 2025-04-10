@@ -1,0 +1,55 @@
+﻿@using RETRA.Models.AccountViewModels
+@using System.ComponentModel.DataAnnotations;
+@model LoginViewModel
+
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h2>Welcome Back</h2>
+            <p>Please enter your credentials to login</p>
+        </div>
+
+        <form asp-action="Login" method="post" class="auth-form">
+            <div asp-validation-summary="ModelOnly" class="auth-validation"></div>
+
+            <div class="form-group">
+                <label asp-for="Username" class="form-label"></label>
+                <div class="input-group">
+                    <span class="input-icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input asp-for="Username" class="form-input" placeholder="Enter your username" />
+                </div>
+                <span asp-validation-for="Username" class="form-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="form-label"></label>
+                <div class="input-group">
+                    <span class="input-icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <input asp-for="Password" type="password" class="form-input" placeholder="Enter your password" />
+                </div>
+                <span asp-validation-for="Password" class="form-error"></span>
+            </div>
+
+            <div class="form-options">
+                <label class="checkbox-container">
+                    <input asp-for="RememberMe" />
+                    <span class="checkmark"></span>
+                    @Html.DisplayNameFor(m => m.RememberMe)
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="auth-button">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Don't have an account? <a asp-action="Register" class="auth-link">Register here</a></p>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 ﻿@model List<User>
 @{
-    ViewData["Title"] = "Dashboard";
+    ViewData["Title"] = "Housekeeping Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -9,11 +9,501 @@
     <div class="dashboard-header">
         <div>
             <h2>
-                <i class="fas fa-clipboard-check"></i> HOUSEKEEPING DASHBOARD
+                <i class="fas fa-broom"></i> HOUSEKEEPING DASHBOARD
             </h2>
-            <p>Welcome, @User.Identity.Name!</p>
+            <p>Welcome, @User.Identity.Name! | Today is @DateTime.Now.ToString("dddd, MMMM dd, yyyy")</p>
         </div>
     </div>
 
+    <!-- Quick Stats -->
+    <div class="housekeeping-stats">
+        <div class="stat-card">
+            <div class="stat-icon bg-primary">
+                <i class="fas fa-bed"></i>
+            </div>
+            <div class="stat-info">
+                <h3>24</h3>
+                <p>Rooms to Clean</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon bg-warning">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-info">
+                <h3>8</h3>
+                <p>In Progress</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon bg-success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="stat-info">
+                <h3>32</h3>
+                <p>Completed Today</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon bg-danger">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="stat-info">
+                <h3>3</h3>
+                <p>Maintenance Issues</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="housekeeping-content">
+        <!-- Room Status Section -->
+        <div class="room-status-section">
+            <div class="section-header">
+                <h3><i class="fas fa-clipboard-list"></i> Room Cleaning Status</h3>
+                <div class="status-filters">
+                    <button class="btn-filter active" data-status="all">All</button>
+                    <button class="btn-filter" data-status="dirty">Dirty</button>
+                    <button class="btn-filter" data-status="inprogress">In Progress</button>
+                    <button class="btn-filter" data-status="clean">Clean</button>
+                    <button class="btn-filter" data-status="inspection">Inspection</button>
+                </div>
+            </div>
+
+            <div class="room-status-grid">
+                <!-- Sample Room Cards - in real app these would come from your backend -->
+                @for (int i = 1; i <= 20; i++)
+                {
+                    var status = "clean";
+                    var statusClass = "status-clean";
+                    var staff = "Unassigned";
+
+                    if (i % 5 == 0) { status = "dirty"; statusClass = "status-dirty"; }
+                    else if (i % 7 == 0) { status = "in-progress"; statusClass = "status-inprogress"; staff = "Maria Santos"; }
+                    else if (i % 9 == 0) { status = "inspection"; statusClass = "status-inspection"; staff = "Juan Dela Cruz"; }
+
+                    <div class="room-card @statusClass" data-status="@status">
+                        <div class="room-number">Room @(100 + i)</div>
+                        <div class="room-status">@status.ToUpper()</div>
+                        <div class="room-info">
+                            <div><i class="fas fa-user"></i> @staff</div>
+                            <div><i class="fas fa-clock"></i> @(i % 4 + 1):@(i * 15 % 60)@(i % 2 == 0 ? "AM" : "PM")</div>
+                        </div>
+                        <div class="room-actions">
+                            <button class="btn-action btn-start" data-room="@(100 + i)"><i class="fas fa-play"></i></button>
+                            <button class="btn-action btn-complete" data-room="@(100 + i)"><i class="fas fa-check"></i></button>
+                            <button class="btn-action btn-issue" data-room="@(100 + i)"><i class="fas fa-exclamation"></i></button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+
+
+            <!-- Maintenance Requests -->
+            <div class="sidebar-section">
+                <h3><i class="fas fa-tools"></i> Maintenance Requests</h3>
+                <div class="maintenance-list">
+                    <div class="maintenance-item urgent">
+                        <div class="maintenance-header">
+                            <span class="badge urgent">URGENT</span>
+                            <span>Room 105 - Leaking Shower</span>
+                        </div>
+                        <div class="maintenance-details">
+                            Reported: Today 9:15AM by Guest
+                        </div>
+                    </div>
+                    <div class="maintenance-item">
+                        <div class="maintenance-header">
+                            <span class="badge">Medium</span>
+                            <span>Room 112 - Broken AC</span>
+                        </div>
+                        <div class="maintenance-details">
+                            Reported: Yesterday 4:30PM by Housekeeping
+                        </div>
+                    </div>
+                    <div class="maintenance-item">
+                        <div class="maintenance-header">
+                            <span class="badge">Low</span>
+                            <span>Room 118 - Stuck Window</span>
+                        </div>
+                        <div class="maintenance-details">
+                            Reported: Today 10:45AM by Inspection
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block mt-2">
+                    <i class="fas fa-plus"></i> New Request
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* Dashboard Header */
+    .dashboard-header {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+        .dashboard-header h2 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .dashboard-header p {
+            margin: 5px 0 0;
+            color: #7f8c8d;
+        }
+
+    /* Quick Stats */
+    .housekeeping-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .stat-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        display: flex;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .bg-primary {
+        background-color: #3498db;
+    }
+
+    .bg-success {
+        background-color: #2ecc71;
+    }
+
+    .bg-warning {
+        background-color: #f39c12;
+    }
+
+    .bg-danger {
+        background-color: #e74c3c;
+    }
+
+    .stat-info h3 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .stat-info p {
+        margin: 5px 0 0;
+        color: #7f8c8d;
+        font-size: 14px;
+    }
+
+    /* Main Content Layout */
+    .housekeeping-content {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 20px;
+    }
+
+    /* Room Status Section */
+    .room-status-section {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .status-filters {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn-filter {
+        padding: 5px 15px;
+        border: 1px solid #ddd;
+        background: #f8f9fa;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+        .btn-filter.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+
+    /* Room Grid */
+    .room-status-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .room-card {
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: all 0.3s;
+    }
+
+    .status-dirty {
+        background: #ffebee;
+        border-left: 4px solid #e74c3c;
+    }
+
+    .status-inprogress {
+        background: #fff8e1;
+        border-left: 4px solid #f39c12;
+    }
+
+    .status-clean {
+        background: #e8f5e9;
+        border-left: 4px solid #2ecc71;
+    }
+
+    .status-inspection {
+        background: #e3f2fd;
+        border-left: 4px solid #3498db;
+    }
+
+    .room-number {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .room-status {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .room-info {
+        font-size: 12px;
+        color: #7f8c8d;
+        margin-bottom: 10px;
+    }
+
+        .room-info div {
+            margin-bottom: 3px;
+        }
+
+    .room-actions {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-action {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background: #ecf0f1;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+        .btn-action:hover {
+            transform: scale(1.1);
+        }
+
+    .btn-start {
+        color: #f39c12;
+    }
+
+    .btn-complete {
+        color: #2ecc71;
+    }
+
+    .btn-issue {
+        color: #e74c3c;
+    }
+
+    /* Sidebar */
+    .housekeeping-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar-section {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+
+        .sidebar-section h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 18px;
+        }
+
+    /* Staff List */
+    .staff-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .staff-member {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .staff-avatar {
+        width: 40px;
+        height: 40px;
+        background: #ecf0f1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        color: #7f8c8d;
+    }
+
+    .staff-details {
+        flex: 1;
+    }
+
+        .staff-details strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .staff-details span {
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+
+    .staff-status {
+        font-size: 11px;
+        padding: 3px 8px;
+        border-radius: 10px;
+    }
+
+        .staff-status.active {
+            background: #d5f5e3;
+            color: #27ae60;
+        }
+
+        .staff-status.inactive {
+            background: #fadbd8;
+            color: #e74c3c;
+        }
+
+    /* Maintenance List */
+    .maintenance-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .maintenance-item {
+        padding: 10px;
+        border-radius: 5px;
+        background: #f8f9fa;
+    }
+
+        .maintenance-item.urgent {
+            background: #ffebee;
+        }
+
+    .maintenance-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+        .maintenance-header span:last-child {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+    .maintenance-details {
+        font-size: 12px;
+        color: #7f8c8d;
+    }
+
+    .badge {
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 11px;
+    }
+
+        .badge.urgent {
+            background: #e74c3c;
+            color: white;
+        }
+</style>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Filter rooms by status
+            $('.btn-filter').click(function() {
+                $('.btn-filter').removeClass('active');
+                $(this).addClass('active');
+
+                const status = $(this).data('status');
+
+                if (status === 'all') {
+                    $('.room-card').show();
+                } else {
+                    $('.room-card').hide();
+                    $(`.room-card[data-status="${status}"]`).show();
+                }
+            });
+
+            // Room action buttons
+            $('.btn-start').click(function() {
+                const roomNumber = $(this).data('room');
+                alert(`Marking Room ${roomNumber} as In Progress`);
+                // AJAX call to update status in backend
+            });
+
+            $('.btn-complete').click(function() {
+                const roomNumber = $(this).data('room');
+                alert(`Marking Room ${roomNumber} as Completed`);
+                // AJAX call to update status in backend
+            });
+
+            $('.btn-issue').click(function() {
+                const roomNumber = $(this).data('room');
+                alert(`Reporting issue for Room ${roomNumber}`);
+                // Open issue reporting modal
+            });
+        });
+    </script>
+}

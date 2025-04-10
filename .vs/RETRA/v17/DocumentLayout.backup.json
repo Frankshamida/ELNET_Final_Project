@@ -1,58 +1,185 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\views\\guest\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\guest\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\controllers\\guestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\controllers\\guestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\views\\admin\\paymentprocessing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\admin\\paymentprocessing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\bookingconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\bookingconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\housekeeping\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\housekeeping\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\guest\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\guest\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\guest\\billing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\guest\\billing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\guest\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\guest\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\guest\\bookroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\guest\\bookroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\guest\\facilities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\guest\\facilities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\guest\\roomservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\guest\\roomservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\checkavailability.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\checkavailability.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\home\\termsandconditions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\home\\termsandconditions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\models\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\models\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\models\\accountviewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\models\\accountviewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\account\\guestlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\account\\guestlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\models\\accountviewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\models\\accountviewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\xx624\\desktop\\elnet_final_project\\retra\\views\\admin\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\admin\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\wwwroot\\css\\frontdesk.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\wwwroot\\css\\frontdesk.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\checkin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\checkin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\guestdirectory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\guestdirectory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\payments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\payments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\roomstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\roomstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|c:\\users\\user\\desktop\\elnet_final_project\\retra\\views\\frontdesk\\servicerequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1148F110-2331-4146-816B-D1B64CD3C403}|RETRA\\RETRA.csproj|solutionrelative:retra\\views\\frontdesk\\servicerequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,173 +189,571 @@
       "DocumentGroups": [
         {
           "DockedWidth": 8,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "RETRA\\Views\\Guest\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Dashboard.cshtml",
-              "RelativeToolTip": "RETRA\\Views\\Guest\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T08:20:37.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "RETRA\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "RETRA\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:16:35.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "RETRA\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "RETRA\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:04:18.151Z",
-              "EditorCaption": ""
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAALYUAAAAAAAAAAAswMkUAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-10T03:41:53.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "RETRA\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "RETRA\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T07:51:48.663Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T03:33:04.388Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\About.cshtml",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "RETRA\\Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAWAAAAAAAAAA==",
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T07:51:12.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T03:33:00.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "RETRA\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\Services.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Services.cshtml*",
+              "RelativeToolTip": "RETRA\\Views\\Home\\Services.cshtml*",
+              "ViewState": "AgIAANYAAAAAAAAAAAAIwOYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T07:49:48.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GuestController.cs",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\GuestController.cs",
-              "RelativeDocumentMoniker": "RETRA\\Controllers\\GuestController.cs",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\GuestController.cs",
-              "RelativeToolTip": "RETRA\\Controllers\\GuestController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T07:45:16.424Z",
+              "WhenOpened": "2025-04-10T03:32:36.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "RETRA\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "RETRA\\wwwroot\\js\\site.js",
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-08T05:40:57.946Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T03:11:02.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PaymentProcessing.cshtml",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Admin\\PaymentProcessing.cshtml",
-              "RelativeDocumentMoniker": "RETRA\\Views\\Admin\\PaymentProcessing.cshtml",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Admin\\PaymentProcessing.cshtml",
-              "RelativeToolTip": "RETRA\\Views\\Admin\\PaymentProcessing.cshtml",
-              "ViewState": "AgIAAPUAAAAAAAAAAAAYwMQAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Housekeeping\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Housekeeping\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Housekeeping\\Dashboard.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Housekeeping\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T05:33:39.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T03:10:50.868Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Reports.cshtml",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Admin\\Reports.cshtml",
-              "RelativeDocumentMoniker": "RETRA\\Views\\Admin\\Reports.cshtml",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Admin\\Reports.cshtml",
-              "RelativeToolTip": "RETRA\\Views\\Admin\\Reports.cshtml",
+              "Title": "Feedback.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Feedback.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Guest\\Feedback.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Feedback.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Guest\\Feedback.cshtml",
+              "ViewState": "AgIAAKgCAAAAAAAAAAAawL0CAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T03:00:41.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Facilities.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Facilities.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Guest\\Facilities.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Facilities.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Guest\\Facilities.cshtml",
+              "ViewState": "AgIAALEBAAAAAAAAAADwv8gBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T02:33:37.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Billing.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Billing.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Guest\\Billing.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\Billing.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Guest\\Billing.cshtml",
+              "ViewState": "AgIAADQBAAAAAAAAAAAYwE4BAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T02:33:22.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RoomService.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\RoomService.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Guest\\RoomService.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\RoomService.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Guest\\RoomService.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T02:27:48.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MyBookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\MyBookings.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Guest\\MyBookings.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\MyBookings.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Guest\\MyBookings.cshtml",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAQwBUBAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T02:19:39.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookRoom.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\BookRoom.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Guest\\BookRoom.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Guest\\BookRoom.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Guest\\BookRoom.cshtml",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAuwN4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T02:19:32.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T02:11:39.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Checkout.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Home\\Checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T01:18:06.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TermsAndConditions.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\TermsAndConditions.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\TermsAndConditions.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\TermsAndConditions.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Home\\TermsAndConditions.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T01:00:42.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "bookingconfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\bookingconfirmation.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\bookingconfirmation.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\bookingconfirmation.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Home\\bookingconfirmation.cshtml",
+              "ViewState": "AgIAACYBAAAAAAAAAAAuwCgBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T00:48:57.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Startup.cs",
+              "RelativeDocumentMoniker": "RETRA\\Startup.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Startup.cs",
+              "RelativeToolTip": "RETRA\\Startup.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwCkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:40:26.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "RETRA\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Services\\IUserService.cs",
+              "RelativeToolTip": "RETRA\\Services\\IUserService.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAYwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:33:15.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Program.cs",
+              "RelativeDocumentMoniker": "RETRA\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Program.cs",
+              "RelativeToolTip": "RETRA\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:32:18.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\appsettings.json",
+              "RelativeDocumentMoniker": "RETRA\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\appsettings.json",
+              "RelativeToolTip": "RETRA\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-09T16:31:30.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserManagementViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\UserManagementViewModel.cs",
+              "RelativeDocumentMoniker": "RETRA\\Models\\UserManagementViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\UserManagementViewModel.cs",
+              "RelativeToolTip": "RETRA\\Models\\UserManagementViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:24:07.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RETRA\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\AppDbContext.cs",
+              "RelativeToolTip": "RETRA\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAzwAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:22:32.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\User.cs",
+              "RelativeDocumentMoniker": "RETRA\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\User.cs",
+              "RelativeToolTip": "RETRA\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:08:32.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\AccountViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "RETRA\\Models\\AccountViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\AccountViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "RETRA\\Models\\AccountViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:08:22.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\AccountViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "RETRA\\Models\\AccountViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Models\\AccountViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "RETRA\\Models\\AccountViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:05:55.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Account\\AccessDenied.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T05:33:38.905Z"
+              "WhenOpened": "2025-04-09T16:04:44.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GuestLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\GuestLogin.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Account\\GuestLogin.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\GuestLogin.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Account\\GuestLogin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T16:04:42.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T16:03:44.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "frontdesk.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\css\\frontdesk.css",
+              "RelativeDocumentMoniker": "RETRA\\wwwroot\\css\\frontdesk.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\css\\frontdesk.css",
+              "RelativeToolTip": "RETRA\\wwwroot\\css\\frontdesk.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-09T15:30:39.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ServiceRequests.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\ServiceRequests.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\ServiceRequests.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\ServiceRequests.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\ServiceRequests.cshtml",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAAAHMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T15:01:06.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Payments.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\Payments.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\Payments.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\Payments.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\Payments.cshtml",
+              "ViewState": "AgIAAEwCAAAAAAAAAAAYwHgCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T14:51:02.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RoomStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\RoomStatus.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\RoomStatus.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\RoomStatus.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\RoomStatus.cshtml",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAAAAsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T14:42:37.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "GuestDirectory.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\GuestDirectory.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\GuestDirectory.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\GuestDirectory.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\GuestDirectory.cshtml",
+              "ViewState": "AgIAAG4BAAAAAAAAAAAYwJoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T14:25:55.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CheckOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\CheckOut.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\CheckOut.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\CheckOut.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\CheckOut.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAswGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T14:24:20.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CheckIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\CheckIn.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\CheckIn.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\CheckIn.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\CheckIn.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T14:11:53.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\Dashboard.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\Dashboard.cshtml",
+              "ViewState": "AgIAADQBAAAAAAAAAAAAwF0BAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T13:58:38.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAHAAAAAAAAAAAADwv6sAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T13:51:25.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Bookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\Bookings.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Frontdesk\\Bookings.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Frontdesk\\Bookings.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Frontdesk\\Bookings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T13:17:31.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "RETRA\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "RETRA\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T12:24:58.094Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "RETRA\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "RETRA\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAIwBsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T05:22:21.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T12:20:15.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "RETRA\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "RETRA\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T05:24:39.452Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RETRA\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RETRA\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvykAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T12:15:35.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
+              "Title": "CheckAvailability.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\CheckAvailability.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\CheckAvailability.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\CheckAvailability.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Home\\CheckAvailability.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAABsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T12:06:58.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "RETRA\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "RETRA\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAK4BAAAAAAAAAAAAAB0CAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-09T11:01:46.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RETRA\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RETRA\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T10:11:20.728Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e26e1cbf-4d96-414e-a013-9418659981a8",
+        "Display": 0,
+        "X": 1066,
+        "Y": 409,
+        "Width": 800,
+        "Height": 600,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "RETRA\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\xx624\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ELNET_Final_Project\\RETRA\\wwwroot\\css\\site.css",
               "RelativeToolTip": "RETRA\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAHgKAAAAAAAAAAAiwJEKAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAADUNAAAAAAAAAAAmwEINAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-08T05:21:40.807Z"
+              "WhenOpened": "2025-04-09T10:43:56.92Z",
+              "EditorCaption": ""
             }
           ]
         }

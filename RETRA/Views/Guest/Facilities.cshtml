@@ -10,8 +10,527 @@
             <h2>
                 <i class="fas fa-swimming-pool"></i> FACILITIES
             </h2>
+            <p class="facilities-subtitle">Explore our world-class amenities designed for your comfort and enjoyment</p>
+        </div>
+    </div>
 
+    <!-- Facilities Navigation -->
+    <div class="facilities-nav">
+        <div class="facility-category active" data-category="all">All Facilities</div>
+        <div class="facility-category" data-category="pool">Pool Area</div>
+        <div class="facility-category" data-category="fitness">Fitness Center</div>
+        <div class="facility-category" data-category="dining">Dining</div>
+        <div class="facility-category" data-category="spa">Spa</div>
+        <div class="facility-category" data-category="business">Business Center</div>
+    </div>
+
+    <!-- Facilities Grid -->
+    <div class="facilities-grid">
+        <!-- Pool Facility -->
+        <div class="facility-card" data-categories="pool">
+            <div class="facility-image" style="background-image: url('/images/pool.jpg')">
+                <div class="facility-status open">OPEN</div>
+            </div>
+            <div class="facility-info">
+                <h3>Infinity Pool</h3>
+                <div class="facility-meta">
+                    <span><i class="fas fa-clock"></i> 7:00 AM - 9:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Level 5</span>
+                </div>
+                <p>Enjoy our stunning infinity pool with panoramic city views. Poolside service available.</p>
+                <div class="facility-actions">
+                    <button class="view-gallery">View Gallery</button>
+                    <button class="book-now">Book Private Cabana</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fitness Center -->
+        <div class="facility-card" data-categories="fitness">
+            <div class="facility-image" style="background-image: url('/images/gym.jpg')">
+                <div class="facility-status open">OPEN</div>
+            </div>
+            <div class="facility-info">
+                <h3>Fitness Center</h3>
+                <div class="facility-meta">
+                    <span><i class="fas fa-clock"></i> 24 Hours</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Level 3</span>
+                </div>
+                <p>State-of-the-art equipment with personal training sessions available upon request.</p>
+                <div class="facility-actions">
+                    <button class="view-gallery">View Equipment</button>
+                    <button class="book-now">Book Trainer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restaurant -->
+        <div class="facility-card" data-categories="dining">
+            <div class="facility-image" style="background-image: url('/images/restaurant.jpg')">
+                <div class="facility-status open">OPEN</div>
+            </div>
+            <div class="facility-info">
+                <h3>Horizon Restaurant</h3>
+                <div class="facility-meta">
+                    <span><i class="fas fa-clock"></i> 6:00 AM - 11:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Ground Floor</span>
+                </div>
+                <p>International cuisine with locally-sourced ingredients. Breakfast buffet available.</p>
+                <div class="facility-actions">
+                    <button class="view-gallery">View Menu</button>
+                    <button class="book-now">Make Reservation</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spa -->
+        <div class="facility-card" data-categories="spa">
+            <div class="facility-image" style="background-image: url('/images/spa.jpg')">
+                <div class="facility-status open">OPEN</div>
+            </div>
+            <div class="facility-info">
+                <h3>Tranquility Spa</h3>
+                <div class="facility-meta">
+                    <span><i class="fas fa-clock"></i> 9:00 AM - 8:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Level 4</span>
+                </div>
+                <p>Full-service spa offering massages, facials, and body treatments. Advance booking recommended.</p>
+                <div class="facility-actions">
+                    <button class="view-gallery">View Services</button>
+                    <button class="book-now">Book Treatment</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Center -->
+        <div class="facility-card" data-categories="business">
+            <div class="facility-image" style="background-image: url('/images/business-center.jpg')">
+                <div class="facility-status open">OPEN</div>
+            </div>
+            <div class="facility-info">
+                <h3>Business Center</h3>
+                <div class="facility-meta">
+                    <span><i class="fas fa-clock"></i> 7:00 AM - 10:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Mezzanine</span>
+                </div>
+                <p>Fully equipped with computers, printers, and meeting spaces. Secretarial services available.</p>
+                <div class="facility-actions">
+                    <button class="view-gallery">View Facilities</button>
+                    <button class="book-now">Reserve Meeting Room</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rooftop Bar -->
+        <div class="facility-card" data-categories="dining">
+            <div class="facility-image" style="background-image: url('/images/bar.jpg')">
+                <div class="facility-status open">OPEN</div>
+            </div>
+            <div class="facility-info">
+                <h3>Sky Lounge</h3>
+                <div class="facility-meta">
+                    <span><i class="fas fa-clock"></i> 4:00 PM - 1:00 AM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Rooftop</span>
+                </div>
+                <p>Signature cocktails and small plates with breathtaking sunset views. Live music on weekends.</p>
+                <div class="facility-actions">
+                    <button class="view-gallery">View Drink Menu</button>
+                    <button class="book-now">Reserve Table</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facility Details Modal -->
+    <div class="facility-modal" id="facility-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3 id="modal-facility-name">Infinity Pool</h3>
+                <div class="facility-meta">
+                    <span id="modal-facility-hours"><i class="fas fa-clock"></i> 7:00 AM - 9:00 PM</span>
+                    <span id="modal-facility-location"><i class="fas fa-map-marker-alt"></i> Level 5</span>
+                    <span id="modal-facility-status" class="facility-status open">OPEN</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="facility-gallery">
+                    <div class="main-image" style="background-image: url('/images/pool-large.jpg')"></div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail" style="background-image: url('/images/pool-large.jpg')"></div>
+                        <div class="thumbnail" style="background-image: url('/images/pool2.jpg')"></div>
+                        <div class="thumbnail" style="background-image: url('/images/pool3.jpg')"></div>
+                    </div>
+                </div>
+                <div class="facility-description">
+                    <h4>About This Facility</h4>
+                    <p id="modal-facility-description">Our stunning infinity pool offers panoramic views of the city skyline. The 25-meter pool is temperature-controlled year-round and features a shallow lounging area with in-water sunbeds. Poolside service is available for drinks and light meals.</p>
+
+                    <h4>Features</h4>
+                    <ul id="modal-facility-features">
+                        <li>25-meter heated infinity pool</li>
+                        <li>Private cabanas available for rent</li>
+                        <li>Poolside bar service</li>
+                        <li>Towels and sunscreen provided</li>
+                        <li>Adult-only hours: 7PM-9PM daily</li>
+                    </ul>
+
+                    <h4>Policies</h4>
+                    <ul id="modal-facility-policies">
+                        <li>Proper swimwear required</li>
+                        <li>No outside food or beverages</li>
+                        <li>Children must be supervised at all times</li>
+                        <li>No diving</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="book-now">Book Now</button>
+                <button class="close-btn">Close</button>
+            </div>
         </div>
     </div>
 </div>
 
+<style>
+    .admin-dashboard {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .dashboard-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .dashboard-header h2 {
+            color: #333;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+    .facilities-subtitle {
+        color: #666;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .facilities-nav {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .facility-category {
+        padding: 8px 15px;
+        background: #f5f5f5;
+        border-radius: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+        .facility-category.active {
+            background: #2196F3;
+            color: white;
+        }
+
+    .facilities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .facility-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .facility-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .facility-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .facility-status {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+        .facility-status.open {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .facility-status.closed {
+            background: #f44336;
+            color: white;
+        }
+
+    .facility-info {
+        padding: 20px;
+    }
+
+        .facility-info h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+    .facility-meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #666;
+    }
+
+        .facility-meta i {
+            margin-right: 5px;
+        }
+
+    .facility-info p {
+        margin: 0 0 15px 0;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .facility-actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    .view-gallery, .book-now {
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .view-gallery {
+        background: white;
+        border: 1px solid #ddd;
+    }
+
+    .book-now {
+        background: #2196F3;
+        color: white;
+    }
+
+    /* Modal Styles */
+    .facility-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .modal-content {
+        background: white;
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #666;
+    }
+
+    .modal-header {
+        padding: 25px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .modal-header h3 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+
+    .modal-body {
+        display: flex;
+        padding: 0;
+    }
+
+    .facility-gallery {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .main-image {
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    .thumbnail-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .thumbnail {
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+        .thumbnail:hover {
+            border-color: #2196F3;
+        }
+
+    .facility-description {
+        flex: 1;
+        padding: 20px;
+        border-left: 1px solid #eee;
+    }
+
+        .facility-description h4 {
+            margin: 20px 0 10px 0;
+            color: #333;
+        }
+
+        .facility-description p,
+        .facility-description ul {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .facility-description ul {
+            padding-left: 20px;
+        }
+
+    .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 15px 25px;
+        border-top: 1px solid #eee;
+    }
+
+    .close-btn {
+        padding: 10px 20px;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .facility-description {
+        border-left: none;
+        border-top: 1px solid #eee;
+    }
+
+    }
+</style>
+
+<script>
+    // Facility category filtering
+    document.querySelectorAll('.facility-category').forEach(category => {
+        category.addEventListener('click', function() {
+            // Update active category
+            document.querySelectorAll('.facility-category').forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+
+            const categoryName = this.getAttribute('data-category');
+            const facilityCards = document.querySelectorAll('.facility-card');
+
+            if (categoryName === 'all') {
+                facilityCards.forEach(card => card.style.display = 'block');
+            } else {
+                facilityCards.forEach(card => {
+                    if (card.getAttribute('data-categories').includes(categoryName)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
+
+    // Open facility modal
+    document.querySelectorAll('.view-gallery').forEach(button => {
+        button.addEventListener('click', function() {
+            const facilityCard = this.closest('.facility-card');
+            const facilityName = facilityCard.querySelector('h3').textContent;
+            const facilityHours = facilityCard.querySelector('.facility-meta span:nth-child(1)').innerHTML;
+            const facilityLocation = facilityCard.querySelector('.facility-meta span:nth-child(2)').innerHTML;
+            const facilityStatus = facilityCard.querySelector('.facility-status').textContent;
+
+            document.getElementById('modal-facility-name').textContent = facilityName;
+            document.getElementById('modal-facility-hours').innerHTML = facilityHours;
+            document.getElementById('modal-facility-location').innerHTML = facilityLocation;
+            document.getElementById('modal-facility-status').textContent = facilityStatus;
+
+            document.getElementById('facility-modal').style.display = 'block';
+        });
+    });
+
+    // Close modal
+    document.querySelector('.close-modal').addEventListener('click', function() {
+        document.getElementById('facility-modal').style.display = 'none';
+    });
+
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        document.getElementById('facility-modal').style.display = 'none';
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('facility-modal')) {
+            document.getElementById('facility-modal').style.display = 'none';
+        }
+    });
+
+    // Thumbnail click handler
+    document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.addEventListener('click', function() {
+            const mainImage = this.closest('.facility-gallery').querySelector('.main-image');
+            mainImage.style.backgroundImage = this.style.backgroundImage;
+        });
+    });
+</script>

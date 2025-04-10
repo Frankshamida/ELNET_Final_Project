@@ -10,8 +10,523 @@
             <h2>
                 <i class="fas fa-utensils"></i> ROOM SERVICE
             </h2>
+            <p class="current-room">Room 304 • Checked-in until 12 April 2025</p>
+        </div>
+    </div>
 
+    <!-- Service Tabs -->
+    <div class="service-tabs">
+        <button class="tab-button active" data-tab="food">Food & Beverage</button>
+        <button class="tab-button" data-tab="housekeeping">Housekeeping</button>
+        <button class="tab-button" data-tab="other">Other Services</button>
+    </div>
+
+    <!-- Food & Beverage Tab -->
+    <div class="service-tab-content active" id="food-tab">
+        <h3>Menu</h3>
+        <div class="menu-categories">
+            <button class="category-button active" data-category="breakfast">Breakfast</button>
+            <button class="category-button" data-category="lunch">Lunch</button>
+            <button class="category-button" data-category="dinner">Dinner</button>
+            <button class="category-button" data-category="beverages">Beverages</button>
+        </div>
+
+        <!-- Breakfast Menu -->
+        <div class="menu-items breakfast show">
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Continental Breakfast</h4>
+                    <p>Fresh fruits, pastries, coffee and juice</p>
+                    <span class="item-price">₱450</span>
+                </div>
+                <div class="item-actions">
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Filipino Breakfast</h4>
+                    <p>Garlic rice, eggs, longganisa or tocino</p>
+                    <span class="item-price">₱550</span>
+                </div>
+                <div class="item-actions">
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lunch Menu (hidden by default) -->
+        <div class="menu-items lunch">
+            <!-- Lunch items would go here -->
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3>Your Order</h3>
+            <div class="order-items">
+                <!-- Items will appear here when added -->
+                <p class="empty-message">Your cart is empty</p>
+            </div>
+            <div class="order-total">
+                <span>Total:</span>
+                <span class="total-amount">₱0</span>
+            </div>
+            <div class="special-requests">
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" placeholder="Any special instructions for your order..."></textarea>
+            </div>
+            <button class="submit-order">Submit Order</button>
+        </div>
+    </div>
+
+    <!-- Housekeeping Tab -->
+    <div class="service-tab-content" id="housekeeping-tab">
+        <h3>Housekeeping Services</h3>
+
+        <div class="service-option">
+            <div class="service-info">
+                <h4>Room Cleaning</h4>
+                <p>Standard cleaning service including bed making, trash removal, and bathroom cleaning</p>
+            </div>
+            <button class="request-service">Request Now</button>
+        </div>
+
+        <div class="service-option">
+            <div class="service-info">
+                <h4>Turndown Service</h4>
+                <p>Evening service including bed preparation, lighting adjustment, and complimentary amenities</p>
+            </div>
+            <button class="request-service">Request Now</button>
+        </div>
+
+        <div class="service-option">
+            <div class="service-info">
+                <h4>Extra Towels/Bedding</h4>
+                <p>Request additional towels, pillows, blankets or other bedding items</p>
+            </div>
+            <div class="service-form">
+                <select class="form-control">
+                    <option>Select Item</option>
+                    <option>Bath Towels (2)</option>
+                    <option>Hand Towels (4)</option>
+                    <option>Pillows (2)</option>
+                    <option>Blanket</option>
+                </select>
+                <button class="request-service">Request</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other Services Tab -->
+    <div class="service-tab-content" id="other-tab">
+        <h3>Additional Services</h3>
+
+        <div class="service-option">
+            <div class="service-info">
+                <h4>Wake-up Call</h4>
+                <p>Schedule a phone call to wake you at your desired time</p>
+            </div>
+            <div class="service-form">
+                <input type="time" class="form-control">
+                <button class="request-service">Schedule</button>
+            </div>
+        </div>
+
+        <div class="service-option">
+            <div class="service-info">
+                <h4>Laundry Service</h4>
+                <p>Same-day laundry and dry cleaning services</p>
+            </div>
+            <button class="request-service">Request Form</button>
+        </div>
+
+        <div class="service-option">
+            <div class="service-info">
+                <h4>Maintenance Request</h4>
+                <p>Report any issues with your room facilities</p>
+            </div>
+            <div class="service-form">
+                <select class="form-control">
+                    <option>Select Issue</option>
+                    <option>Air Conditioning</option>
+                    <option>Plumbing</option>
+                    <option>Electrical</option>
+                    <option>Furniture</option>
+                    <option>Other</option>
+                </select>
+                <button class="request-service">Report</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="confirmation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Order Confirmation</h3>
+            <p>Your room service order has been received and will be delivered within 30 minutes.</p>
+            <p class="order-number">Order #RS-2025-0411-304</p>
+            <button class="modal-close-btn">OK</button>
         </div>
     </div>
 </div>
 
+<style>
+    .admin-dashboard {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .dashboard-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .dashboard-header h2 {
+            color: #333;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+    .current-room {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .service-tabs {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tab-button {
+        padding: 10px 20px;
+        background: none;
+        border: none;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+        font-weight: bold;
+        color: #666;
+    }
+
+        .tab-button.active {
+            color: #2196F3;
+            border-bottom-color: #2196F3;
+        }
+
+    .service-tab-content {
+        display: none;
+        padding: 15px 0;
+    }
+
+        .service-tab-content.active {
+            display: block;
+        }
+
+    .menu-categories {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .category-button {
+        padding: 8px 15px;
+        background: #f5f5f5;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+        .category-button.active {
+            background: #2196F3;
+            color: white;
+        }
+
+    .menu-items {
+        display: none;
+        margin-bottom: 30px;
+    }
+
+        .menu-items.show {
+            display: block;
+        }
+
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .item-info h4 {
+        margin: 0 0 5px 0;
+        color: #333;
+    }
+
+    .item-info p {
+        margin: 0 0 5px 0;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .item-price {
+        font-weight: bold;
+        color: #2196F3;
+    }
+
+    .item-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quantity-control {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .quantity-btn {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #ddd;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .quantity {
+        min-width: 20px;
+        text-align: center;
+    }
+
+    .add-to-cart {
+        padding: 5px 15px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .order-summary {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+    }
+
+        .order-summary h3 {
+            margin-top: 0;
+        }
+
+    .order-items {
+        min-height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .empty-message {
+        color: #999;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .order-total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .special-requests {
+        margin: 15px 0;
+    }
+
+        .special-requests textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+            min-height: 80px;
+        }
+
+    .submit-order {
+        width: 100%;
+        padding: 12px;
+        background: #2196F3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .service-option {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .service-info h4 {
+        margin: 0 0 5px 0;
+    }
+
+    .service-info p {
+        margin: 0 0 10px 0;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .request-service {
+        padding: 8px 15px;
+        background: #2196F3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .service-form {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+        .service-form .form-control {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 90%;
+        position: relative;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .order-number {
+        font-weight: bold;
+        text-align: center;
+        margin: 15px 0;
+        color: #2196F3;
+    }
+
+    .modal-close-btn {
+        width: 100%;
+        padding: 10px;
+        background: #2196F3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all tabs and buttons
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.service-tab-content').forEach(tab => tab.classList.remove('active'));
+
+            // Add active class to clicked button and corresponding tab
+            button.classList.add('active');
+            const tabId = button.getAttribute('data-tab') + '-tab';
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+
+    // Menu category switching
+    document.querySelectorAll('.category-button').forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all category buttons
+            document.querySelectorAll('.category-button').forEach(btn => btn.classList.remove('active'));
+            // Hide all menu sections
+            document.querySelectorAll('.menu-items').forEach(menu => menu.classList.remove('show'));
+
+            // Add active class to clicked button and show corresponding menu
+            button.classList.add('active');
+            const category = button.getAttribute('data-category');
+            document.querySelector(`.menu-items.${category}`).classList.add('show');
+        });
+    });
+
+    // Quantity controls
+    document.querySelectorAll('.quantity-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const quantityElement = this.parentElement.querySelector('.quantity');
+            let quantity = parseInt(quantityElement.textContent);
+
+            if (this.classList.contains('minus') && quantity > 0) {
+                quantity--;
+            } else if (this.classList.contains('plus')) {
+                quantity++;
+            }
+
+            quantityElement.textContent = quantity;
+        });
+    });
+
+    // Submit order button
+    document.querySelector('.submit-order')?.addEventListener('click', function() {
+        document.getElementById('confirmation-modal').style.display = 'flex';
+    });
+
+    // Close modal
+    document.querySelector('.close-modal')?.addEventListener('click', function() {
+        document.getElementById('confirmation-modal').style.display = 'none';
+    });
+
+    document.querySelector('.modal-close-btn')?.addEventListener('click', function() {
+        document.getElementById('confirmation-modal').style.display = 'none';
+    });
+</script>

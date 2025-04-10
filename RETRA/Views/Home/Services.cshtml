@@ -1,0 +1,581 @@
+﻿@{
+    ViewData["Title"] = "Services";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="admin-dashboard">
+    <!-- Header -->
+    <div class="dashboard-header">
+        <div>
+            <h2>
+                <i class="fas fa-concierge-bell"></i> RETRA HOTEL SERVICES
+            </h2>
+            <p class="services-subtitle">Discover our exceptional services designed for your comfort and convenience</p>
+        </div>
+    </div>
+
+    <!-- Services Categories -->
+    <div class="services-categories">
+        <div class="category active" data-category="all">All Services</div>
+        <div class="category" data-category="dining">Dining</div>
+        <div class="category" data-category="wellness">Wellness</div>
+        <div class="category" data-category="business">Business</div>
+        <div class="category" data-category="concierge">Concierge</div>
+        <div class="category" data-category="family">Family</div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+        <!-- Restaurant Service -->
+        <div class="service-card" data-categories="dining">
+            <div class="service-image" style="background-image: url('/images/restaurant-service.jpg')">
+                <div class="service-badge">Dining</div>
+            </div>
+            <div class="service-info">
+                <h3>Horizon Restaurant</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> 6:00 AM - 11:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Ground Floor</span>
+                </div>
+                <p>Experience international cuisine with locally-sourced ingredients. Our breakfast buffet is renowned throughout the city.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Menu</button>
+                    <button class="book-service">Make Reservation</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spa Service -->
+        <div class="service-card" data-categories="wellness">
+            <div class="service-image" style="background-image: url('/images/spa-service.jpg')">
+                <div class="service-badge">Wellness</div>
+            </div>
+            <div class="service-info">
+                <h3>Tranquility Spa</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> 9:00 AM - 8:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Level 4</span>
+                </div>
+                <p>Rejuvenate with our signature massages, facials, and body treatments in a serene environment.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Treatments</button>
+                    <button class="book-service">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Center -->
+        <div class="service-card" data-categories="business">
+            <div class="service-image" style="background-image: url('/images/business-service.jpg')">
+                <div class="service-badge">Business</div>
+            </div>
+            <div class="service-info">
+                <h3>Business Center</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> 7:00 AM - 10:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Mezzanine</span>
+                </div>
+                <p>Fully equipped meeting rooms and secretarial services to keep you productive during your stay.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Facilities</button>
+                    <button class="book-service">Reserve Space</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concierge -->
+        <div class="service-card" data-categories="concierge">
+            <div class="service-image" style="background-image: url('/images/concierge-service.jpg')">
+                <div class="service-badge">Concierge</div>
+            </div>
+            <div class="service-info">
+                <h3>24/7 Concierge</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> Available 24 Hours</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Lobby</span>
+                </div>
+                <p>Our expert concierge team can arrange tours, transportation, tickets, and personalized city experiences.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Services</button>
+                    <button class="book-service">Make Request</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kids Club -->
+        <div class="service-card" data-categories="family">
+            <div class="service-image" style="background-image: url('/images/kids-service.jpg')">
+                <div class="service-badge">Family</div>
+            </div>
+            <div class="service-info">
+                <h3>Retra Kids Club</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> 8:00 AM - 6:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Level 2</span>
+                </div>
+                <p>Supervised activities and play areas for children aged 3-12, giving parents time to relax.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Activities</button>
+                    <button class="book-service">Register Child</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Room Service -->
+        <div class="service-card" data-categories="dining">
+            <div class="service-image" style="background-image: url('/images/room-service.jpg')">
+                <div class="service-badge">Dining</div>
+            </div>
+            <div class="service-info">
+                <h3>24-Hour Room Service</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> Available 24 Hours</span>
+                    <span><i class="fas fa-map-marker-alt"></i> In-Room</span>
+                </div>
+                <p>Enjoy gourmet meals in the comfort of your room with our extensive all-day dining menu.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Menu</button>
+                    <button class="book-service">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pool -->
+        <div class="service-card" data-categories="wellness">
+            <div class="service-image" style="background-image: url('/images/pool-service.jpg')">
+                <div class="service-badge">Wellness</div>
+            </div>
+            <div class="service-info">
+                <h3>Infinity Pool</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> 7:00 AM - 9:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Level 5</span>
+                </div>
+                <p>Our temperature-controlled infinity pool offers panoramic city views and poolside service.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Gallery</button>
+                    <button class="book-service">Book Cabana</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fitness -->
+        <div class="service-card" data-categories="wellness">
+            <div class="service-image" style="background-image: url('/images/fitness-service.jpg')">
+                <div class="service-badge">Wellness</div>
+            </div>
+            <div class="service-info">
+                <h3>Fitness Center</h3>
+                <div class="service-meta">
+                    <span><i class="fas fa-clock"></i> 24 Hours</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Level 3</span>
+                </div>
+                <p>State-of-the-art equipment with personal training sessions available upon request.</p>
+                <div class="service-actions">
+                    <button class="view-menu">View Equipment</button>
+                    <button class="book-service">Book Trainer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image" id="modalServiceImage"></div>
+            <div class="modal-body">
+                <h3 id="modalServiceTitle">Service Title</h3>
+                <div class="service-meta">
+                    <span id="modalServiceHours"><i class="fas fa-clock"></i> Hours</span>
+                    <span id="modalServiceLocation"><i class="fas fa-map-marker-alt"></i> Location</span>
+                </div>
+                <p id="modalServiceDescription">Service description will appear here.</p>
+
+                <div class="service-details">
+                    <h4>Service Details</h4>
+                    <ul id="modalServiceFeatures">
+                        <!-- Features will be added here -->
+                    </ul>
+
+                    <h4>Policies</h4>
+                    <ul id="modalServicePolicies">
+                        <!-- Policies will be added here -->
+                    </ul>
+                </div>
+
+                <div class="modal-actions">
+                    <button class="view-menu">View Menu/Gallery</button>
+                    <button class="book-service">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .admin-dashboard {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .dashboard-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .dashboard-header h2 {
+            color: #333;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+    .services-subtitle {
+        color: #666;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .services-categories {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .category {
+        padding: 8px 15px;
+        background: #f5f5f5;
+        border-radius: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+        font-size: 14px;
+        transition: all 0.3s;
+    }
+
+        .category.active {
+            background: #2196F3;
+            color: white;
+        }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .service-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .service-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        background: rgba(0,0,0,0.7);
+        color: white;
+    }
+
+    .service-info {
+        padding: 20px;
+    }
+
+        .service-info h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+    .service-meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #666;
+    }
+
+        .service-meta i {
+            margin-right: 5px;
+        }
+
+    .service-info p {
+        margin: 0 0 15px 0;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .service-actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    .view-menu, .book-service {
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        transition: all 0.3s;
+    }
+
+    .view-menu {
+        background: white;
+        border: 1px solid #ddd;
+    }
+
+        .view-menu:hover {
+            background: #f5f5f5;
+        }
+
+    .book-service {
+        background: #2196F3;
+        color: white;
+    }
+
+        .book-service:hover {
+            background: #0b7dda;
+        }
+
+    /* Modal Styles */
+    .service-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .modal-content {
+        background: white;
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #666;
+        z-index: 1;
+    }
+
+    .modal-image {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .modal-body {
+        padding: 25px;
+    }
+
+        .modal-body h3 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .modal-body .service-meta {
+            margin-bottom: 20px;
+        }
+
+        .modal-body p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+    .service-details {
+        margin: 25px 0;
+    }
+
+        .service-details h4 {
+            margin: 20px 0 10px 0;
+            color: #333;
+        }
+
+        .service-details ul {
+            padding-left: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .service-details li {
+            margin-bottom: 8px;
+        }
+
+    .modal-actions {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+        .modal-actions .view-menu,
+        .modal-actions .book-service {
+            padding: 12px 20px;
+            font-size: 16px;
+            flex: 1;
+        }
+
+  
+
+    .modal-content {
+        margin: 10px auto;
+    }
+
+    .modal-image {
+        height: 200px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    }
+</style>
+
+<script>
+    // Category filtering
+    document.querySelectorAll('.category').forEach(category => {
+        category.addEventListener('click', function() {
+            // Update active category
+            document.querySelectorAll('.category').forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+
+            const categoryName = this.getAttribute('data-category');
+            const serviceCards = document.querySelectorAll('.service-card');
+
+            if (categoryName === 'all') {
+                serviceCards.forEach(card => card.style.display = 'block');
+            } else {
+                serviceCards.forEach(card => {
+                    if (card.getAttribute('data-categories').includes(categoryName)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
+
+    // Service card click handler
+    document.querySelectorAll('.view-menu, .book-service').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+
+            const serviceCard = this.closest('.service-card');
+            const serviceImage = serviceCard.querySelector('.service-image').style.backgroundImage;
+            const serviceTitle = serviceCard.querySelector('h3').textContent;
+            const serviceHours = serviceCard.querySelector('.service-meta span:nth-child(1)').innerHTML;
+            const serviceLocation = serviceCard.querySelector('.service-meta span:nth-child(2)').innerHTML;
+            const serviceDescription = serviceCard.querySelector('p').textContent;
+
+            // Set modal content
+            document.getElementById('modalServiceImage').style.backgroundImage = serviceImage;
+            document.getElementById('modalServiceTitle').textContent = serviceTitle;
+            document.getElementById('modalServiceHours').innerHTML = serviceHours;
+            document.getElementById('modalServiceLocation').innerHTML = serviceLocation;
+            document.getElementById('modalServiceDescription').textContent = serviceDescription;
+
+            // Set features and policies based on service
+            const featuresList = document.getElementById('modalServiceFeatures');
+            const policiesList = document.getElementById('modalServicePolicies');
+
+            featuresList.innerHTML = '';
+            policiesList.innerHTML = '';
+
+            // Sample features and policies - in a real app these would come from your data
+            if (serviceTitle.includes('Restaurant')) {
+                addFeature(featuresList, 'International cuisine with local ingredients');
+                addFeature(featuresList, 'Daily breakfast buffet 6AM-11AM');
+                addFeature(featuresList, 'Outdoor terrace seating available');
+                addFeature(featuresList, 'Full bar with signature cocktails');
+
+                addPolicy(policiesList, 'Reservations recommended for dinner');
+                addPolicy(policiesList, 'Smart casual dress code after 6PM');
+                addPolicy(policiesList, '10% service charge added to all bills');
+            } else if (serviceTitle.includes('Spa')) {
+                addFeature(featuresList, 'Full range of massage therapies');
+                addFeature(featuresList, 'Facials using organic products');
+                addFeature(featuresList, 'Couples treatment rooms available');
+                addFeature(featuresList, 'Private relaxation lounge');
+
+                addPolicy(policiesList, '24-hour cancellation policy');
+                addPolicy(policiesList, 'Arrive 15 minutes before appointment');
+                addPolicy(policiesList, 'Robes and slippers provided');
+            } else if (serviceTitle.includes('Business')) {
+                addFeature(featuresList, 'High-speed internet access');
+                addFeature(featuresList, 'Printing and copying services');
+                addFeature(featuresList, 'Private meeting rooms');
+                addFeature(featuresList, 'Video conferencing equipment');
+
+                addPolicy(policiesList, 'Hourly and daily rates available');
+                addPolicy(policiesList, 'Advance booking recommended');
+                addPolicy(policiesList, 'Free for hotel guests with reservation');
+            }
+
+            // Open modal
+            document.getElementById('serviceModal').style.display = 'block';
+        });
+    });
+
+    function addFeature(list, text) {
+        const li = document.createElement('li');
+        li.textContent = text;
+        list.appendChild(li);
+    }
+
+    function addPolicy(list, text) {
+        const li = document.createElement('li');
+        li.textContent = text;
+        list.appendChild(li);
+    }
+
+    // Close modal
+    document.querySelector('.close-modal').addEventListener('click', function() {
+        document.getElementById('serviceModal').style.display = 'none';
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('serviceModal')) {
+            document.getElementById('serviceModal').style.display = 'none';
+        }
+    });
+</script>

@@ -10,9 +10,763 @@
             <h2>
                 <i class="fas fa-concierge-bell"></i> SERVICES
             </h2>
-
         </div>
     </div>
 
+    <!-- Services Content -->
+    <div class="services-container">
+        <!-- Filter and Search Controls -->
+        <div class="services-controls">
+            <div class="search-box">
+                <input type="text" id="serviceSearch" class="form-control" placeholder="Search services...">
+                <button class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+
+            <div class="filter-options">
+                <select class="form-control">
+                    <option>All Services</option>
+                    <option>Room Service</option>
+                    <option>Housekeeping</option>
+                    <option>Maintenance</option>
+                    <option>Transportation</option>
+                    <option>Concierge</option>
+                </select>
+
+                <select class="form-control">
+                    <option>All Statuses</option>
+                    <option>Requested</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                    <option>Cancelled</option>
+                </select>
+
+                <input type="date" class="form-control" id="serviceDateFilter">
+
+                <button class="btn btn-primary">
+                    <i class="fas fa-filter"></i> Apply
+                </button>
+            </div>
+        </div>
+
+        <!-- Services Summary Cards -->
+        <div class="service-statistics">
+            <div class="stat-card">
+                <div class="stat-value">18</div>
+                <div class="stat-label">Today's Requests</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">7</div>
+                <div class="stat-label">In Progress</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">9</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Cancelled</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$1,245</div>
+                <div class="stat-label">Service Revenue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">4.8</div>
+                <div class="stat-label">Avg. Rating</div>
+            </div>
+        </div>
+
+        <!-- Services Table -->
+        <div class="services-list-card">
+            <div class="services-list-header">
+                <h3><i class="fas fa-list"></i> Recent Service Requests</h3>
+                <button class="btn btn-success">
+                    <i class="fas fa-plus"></i> New Request
+                </button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="services-table">
+                    <thead>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Guest</th>
+                            <th>Room</th>
+                            <th>Service Type</th>
+                            <th>Request Time</th>
+                            <th>Status</th>
+                            <th>Assigned To</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#SR-2023-00145</td>
+                            <td>John Smith</td>
+                            <td>305</td>
+                            <td><span class="service-type room-service">Room Service</span></td>
+                            <td>05/17/2023 8:30 AM</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>Kitchen Staff</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-secondary"><i class="fas fa-receipt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#SR-2023-00144</td>
+                            <td>Sarah Johnson</td>
+                            <td>412</td>
+                            <td><span class="service-type housekeeping">Housekeeping</span></td>
+                            <td>05/17/2023 9:15 AM</td>
+                            <td><span class="status-badge in-progress">In Progress</span></td>
+                            <td>Maria G.</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-success"><i class="fas fa-check"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#SR-2023-00143</td>
+                            <td>Robert Davis</td>
+                            <td>401</td>
+                            <td><span class="service-type maintenance">Maintenance</span></td>
+                            <td>05/17/2023 10:00 AM</td>
+                            <td><span class="status-badge requested">Requested</span></td>
+                            <td>-</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-user-tie"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#SR-2023-00142</td>
+                            <td>Emily Wilson</td>
+                            <td>501</td>
+                            <td><span class="service-type transportation">Transportation</span></td>
+                            <td>05/16/2023 3:45 PM</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>Driver #3</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-secondary"><i class="fas fa-receipt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#SR-2023-00141</td>
+                            <td>Michael Brown</td>
+                            <td>321</td>
+                            <td><span class="service-type concierge">Concierge</span></td>
+                            <td>05/16/2023 5:30 PM</td>
+                            <td><span class="status-badge cancelled">Cancelled</span></td>
+                            <td>-</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <div class="pagination-info">
+                    Showing 1 to 5 of 18 entries
+                </div>
+                <div class="pagination-controls">
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Previous</button>
+                    <button class="btn btn-sm btn-outline-primary active">1</button>
+                    <button class="btn btn-sm btn-outline-primary">2</button>
+                    <button class="btn btn-sm btn-outline-primary">3</button>
+                    <button class="btn btn-sm btn-outline-primary">4</button>
+                    <button class="btn btn-sm btn-outline-primary">5</button>
+                    <button class="btn btn-sm btn-outline-secondary">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Detail Modal (hidden by default) -->
+        <div class="service-detail-modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-tasks"></i> Service Request Details</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-info">
+                        <div class="info-row">
+                            <span class="info-label">Request ID:</span>
+                            <span class="info-value">#SR-2023-00144</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Guest:</span>
+                            <span class="info-value">Sarah Johnson (Room 412)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Service Type:</span>
+                            <span class="info-value service-type housekeeping">Housekeeping</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Request Time:</span>
+                            <span class="info-value">05/17/2023 9:15 AM</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Status:</span>
+                            <span class="info-value status-badge in-progress">In Progress</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Assigned To:</span>
+                            <span class="info-value">Maria Gonzalez (Housekeeping Staff)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Request Details:</span>
+                            <span class="info-value">Guest requested extra towels, toiletries, and room cleaning</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Special Instructions:</span>
+                            <span class="info-value">Guest prefers eco-friendly cleaning products if available</span>
+                        </div>
+                    </div>
+
+                    <div class="service-timeline">
+                        <h4><i class="fas fa-history"></i> Service Timeline</h4>
+                        <div class="timeline-item">
+                            <div class="timeline-time">9:15 AM</div>
+                            <div class="timeline-content">
+                                <strong>Request Received</strong>
+                                <p>Guest submitted request via in-room tablet</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">9:20 AM</div>
+                            <div class="timeline-content">
+                                <strong>Assigned to Staff</strong>
+                                <p>Assigned to Maria Gonzalez</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">9:45 AM</div>
+                            <div class="timeline-content">
+                                <strong>Service Started</strong>
+                                <p>Staff began servicing the room</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-charges">
+                        <h4><i class="fas fa-receipt"></i> Charges</h4>
+                        <table>
+                            <tr>
+                                <td>Standard Cleaning:</td>
+                                <td>$0.00 (Included)</td>
+                            </tr>
+                            <tr>
+                                <td>Additional Towels:</td>
+                                <td>$5.00</td>
+                            </tr>
+                            <tr>
+                                <td>Toiletries:</td>
+                                <td>$12.50</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td>Total:</td>
+                                <td>$17.50</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="service-notes">
+                        <h4><i class="fas fa-sticky-note"></i> Staff Notes</h4>
+                        <textarea class="form-control" rows="3">Guest requested additional service for tomorrow at same time. Left 4 extra towels and premium toiletries as requested.</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary close-modal">Close</button>
+                    <button class="btn btn-success"><i class="fas fa-check"></i> Mark Complete</button>
+                    <button class="btn btn-primary"><i class="fas fa-print"></i> Print Receipt</button>
+                    <button class="btn btn-warning"><i class="fas fa-edit"></i> Update</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Service Request Modal (hidden by default) -->
+        <div class="new-service-modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-plus-circle"></i> New Service Request</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="guestSelect">Guest</label>
+                        <select id="guestSelect" class="form-control">
+                            <option>Select Guest</option>
+                            <option>John Smith (Room 305)</option>
+                            <option>Sarah Johnson (Room 412)</option>
+                            <option>Robert Davis (Room 401)</option>
+                            <option>Emily Wilson (Checked Out)</option>
+                            <option>Michael Brown (Room 321)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">Service Type</label>
+                        <select id="serviceType" class="form-control">
+                            <option>Room Service</option>
+                            <option>Housekeeping</option>
+                            <option>Maintenance</option>
+                            <option>Transportation</option>
+                            <option>Concierge</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="roomServiceFields">
+                        <label>Room Service Details</label>
+                        <select class="form-control mb-2">
+                            <option>Breakfast</option>
+                            <option>Lunch</option>
+                            <option>Dinner</option>
+                            <option>Snacks</option>
+                            <option>Beverages</option>
+                        </select>
+                        <textarea class="form-control" rows="3" placeholder="Specific items requested..."></textarea>
+                    </div>
+
+                    <div class="form-group" id="housekeepingFields" style="display:none;">
+                        <label>Housekeeping Details</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Regular Cleaning</label>
+                            <label><input type="checkbox"> Extra Towels</label>
+                            <label><input type="checkbox"> Toiletries</label>
+                            <label><input type="checkbox"> Bedding Change</label>
+                            <label><input type="checkbox"> Mini Bar Restock</label>
+                        </div>
+                        <textarea class="form-control mt-2" rows="2" placeholder="Special requests..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicePriority">Priority</label>
+                        <select id="servicePriority" class="form-control">
+                            <option>Normal</option>
+                            <option>High</option>
+                            <option>Emergency</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceNotes">Notes</label>
+                        <textarea id="serviceNotes" class="form-control" rows="3" placeholder="Additional details..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary close-modal">Cancel</button>
+                    <button class="btn btn-primary"><i class="fas fa-check"></i> Submit Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* Services Specific Styles */
+    .services-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .services-controls {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search-box, .filter-options {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+        .search-box input {
+            min-width: 300px;
+        }
+
+        .filter-options select, .filter-options input {
+            min-width: 150px;
+        }
+
+    .service-statistics {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .stat-card {
+        background: white;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .stat-value {
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .stat-label {
+        font-size: 14px;
+        color: #7f8c8d;
+    }
+
+    .services-list-card {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .services-list-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .services-list-header h3 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+    .services-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .services-table th {
+            background-color: #f8f9fa;
+            color: #7f8c8d;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .services-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+        }
+
+        .services-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+    .status-badge {
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+        .status-badge.completed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .status-badge.in-progress {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .status-badge.requested {
+            background-color: #cce5ff;
+            color: #004085;
+        }
+
+        .status-badge.cancelled {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+    .service-type {
+        padding: 3px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+        .service-type.room-service {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .service-type.housekeeping {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .service-type.maintenance {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .service-type.transportation {
+            background-color: #e2e3e5;
+            color: #383d41;
+        }
+
+        .service-type.concierge {
+            background-color: #d6d8f9;
+            color: #1a237e;
+        }
+
+    .btn-sm {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .table-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .pagination-controls {
+        display: flex;
+        gap: 5px;
+    }
+
+    /* Service Detail Modal */
+    .service-detail-modal, .new-service-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        background: white;
+        border-radius: 8px;
+        width: 800px;
+        max-width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-header {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .modal-header h3 {
+            color: #2c3e50;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+    .close-modal {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #7f8c8d;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .service-info, .service-timeline, .service-charges, .service-notes {
+        margin-bottom: 25px;
+    }
+
+    .info-row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: #7f8c8d;
+        width: 150px;
+    }
+
+    .info-value {
+        flex: 1;
+    }
+
+    .service-timeline {
+        border-left: 2px solid #eee;
+        padding-left: 20px;
+    }
+
+    .timeline-item {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #3498db;
+        }
+
+    .timeline-time {
+        font-weight: 600;
+        color: #7f8c8d;
+        font-size: 14px;
+    }
+
+    .timeline-content {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .service-charges table {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .service-charges td {
+        padding: 8px 0;
+    }
+
+        .service-charges td:last-child {
+            text-align: right;
+        }
+
+    .total-row td {
+        font-weight: 600;
+        color: #2c3e50;
+        border-top: 1px solid #eee;
+        padding-top: 12px;
+    }
+
+    .modal-footer {
+        padding: 15px 20px;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    /* New Service Form */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #7f8c8d;
+        }
+
+    .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: normal;
+        }
+
+    #roomServiceFields, #housekeepingFields {
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Show service detail modal
+        document.querySelectorAll('.btn-info').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.service-detail-modal').style.display = 'flex';
+            });
+        });
+
+        // Show new service modal
+        document.querySelector('.services-list-header button').addEventListener('click', function() {
+            document.querySelector('.new-service-modal').style.display = 'flex';
+        });
+
+        // Close modals
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.service-detail-modal').style.display = 'none';
+                document.querySelector('.new-service-modal').style.display = 'none';
+            });
+        });
+
+        // Show specific service fields when selected
+        document.getElementById('serviceType').addEventListener('change', function() {
+            document.getElementById('roomServiceFields').style.display = 'none';
+            document.getElementById('housekeepingFields').style.display = 'none';
+
+            if (this.value === 'Room Service') {
+                document.getElementById('roomServiceFields').style.display = 'block';
+            } else if (this.value === 'Housekeeping') {
+                document.getElementById('housekeepingFields').style.display = 'block';
+            }
+        });
+
+        // Mock search functionality
+        document.querySelector('.search-box button').addEventListener('click', function() {
+            const searchTerm = document.getElementById('serviceSearch').value;
+            if (searchTerm) {
+                toastr.info(`Searching for "${searchTerm}"... (mock)`);
+            } else {
+                toastr.error('Please enter a search term');
+            }
+        });
+
+        // Mock filter functionality
+        document.querySelector('.filter-options button').addEventListener('click', function() {
+            toastr.info('Applying service filters... (mock)');
+        });
+
+        // Mock pagination
+        document.querySelectorAll('.pagination-controls button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (!this.disabled) {
+                    document.querySelector('.pagination-controls .active').classList.remove('active');
+                    this.classList.add('active');
+                    toastr.info('Loading page... (mock)');
+                }
+            });
+        });
+    });
+</script>

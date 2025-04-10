@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RETRA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8240640fcd82fc13940e9549e438289af188ecd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b353cdde809428f03b5993c42203ebf013cb4727")]
 [assembly: System.Reflection.AssemblyProductAttribute("RETRA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RETRA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
